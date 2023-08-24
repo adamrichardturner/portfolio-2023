@@ -16,12 +16,18 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+html {
+  font-size: 16px;
+}
+
+.btn {
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0px 16px 6px 0px rgba(0, 0, 0, 0.06);
+}
+
+.btn--cv {
+  background: #ffc436;
+  color: #fff;
+  font-size: 14px;
 }

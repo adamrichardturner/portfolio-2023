@@ -1,0 +1,70 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Section Heights  */
+
+.hero,
+.projects,
+.media,
+.contact {
+  min-height: 720px;
+}
+
+@media (max-width: 1024px) {
+  .hero,
+  .projects,
+  .media,
+  .contact {
+    min-height: 100vh;
+  }
+}
+
+/* Hero */
+
+.hero {
+  background-image: url('/hero-shape.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: #2f38d9;
+}
+
+/* Navigation Burger Menu Styles */
+.desktop-nav {
+  display: none;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateX(100%);
+  transition: transform 0.25s ease;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 1000;
+}
+
+#overlay.open {
+  transform: translateX(0);
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+@media (min-width: 640px) {
+  .desktop-nav {
+    display: block;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+}
