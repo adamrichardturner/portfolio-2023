@@ -13,6 +13,16 @@ const config: Config = {
         secondary: '#FFC436',
         tertiary: '#484848',
         body: '#1E1E1E',
+        caption: '#3A3A3A',
+      },
+      fontSize: {
+        sm: '0.8rem',
+        base: '1rem',
+        xl: '1.25rem',
+        '2xl': '1.563rem',
+        '3xl': '1.953rem',
+        '4xl': '2.441rem',
+        '5xl': '4rem',
       },
       container: {
         center: true,
@@ -24,6 +34,9 @@ const config: Config = {
           xl: '1280px',
           '2xl': '1280px',
         },
+      },
+      boxShadow: {
+        md: `0px 6px 16px 0px rgba(0, 0, 0, 0.06)`,
       },
     },
   },
