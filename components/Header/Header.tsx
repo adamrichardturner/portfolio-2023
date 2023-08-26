@@ -2,7 +2,6 @@ import { useState, useEffect, FunctionComponent } from 'react'
 import Image from 'next/image'
 
 const Header: FunctionComponent = () => {
-  const [isSmallScreen, setIsSmallScreen] = useState<boolean>(false)
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
   const [isScrolled, setIsScrolled] = useState<boolean>(false)
 
@@ -11,31 +10,18 @@ const Header: FunctionComponent = () => {
       if (window.innerWidth > 640 && isMenuOpen) {
         setIsMenuOpen(false)
       }
-      if (window.innerWidth < 640) {
-        setIsSmallScreen(true)
-      } else {
-        setIsSmallScreen(false)
-      }
-    }
-
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 16)
     }
 
     window.addEventListener('resize', handleResize)
-    window.addEventListener('scroll', handleScroll)
 
     return () => {
       window.removeEventListener('resize', handleResize)
-      window.removeEventListener('scroll', handleScroll)
     }
-  }, [isMenuOpen, isSmallScreen])
+  }, [isMenuOpen])
 
   return (
     <header
-      className={`fixed top-0 left-4 right-4 rounded-lg shadow-md ${
-        isScrolled ? 'top-0' : 'top-4'
-      } h-16 bg-white`}
+      className={`fixed top-4 left-4 right-4 rounded-lg shadow-md h-16 bg-white`}
     >
       <div className='container h-full flex items-center justify-between'>
         <div className='flex flex-row items-center space-x-2'>

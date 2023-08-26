@@ -31,8 +31,8 @@ const config: Config = {
           sm: '100%',
           md: '640px',
           lg: '1024px',
-          xl: '1280px',
-          '2xl': '1280px',
+          xl: '1024px',
+          '2xl': '1024px',
         },
       },
       boxShadow: {
