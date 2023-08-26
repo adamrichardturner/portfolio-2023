@@ -21,14 +21,10 @@ const Hero: FunctionComponent<{}> = () => {
             based in London, skilled in crafting websites and applications using
             React, Next, JavaScript and TypeScript.
             <br />
-            <br /> If you&apos;re looking for someone to help bring your web
-            projects to life, you&apos;ve come to the right place!
             <br />
-            <br />
-            My greatest strengths are in Front End with excellent commercial
-            experience in this area. My ambition is to progressively enhance my
-            abilities across a diverse array of technologies and I am keen to
-            work on either end of the spectrum.
+            My greatest strengths are in Front End, with excellent commercial
+            experience in this area. I aim to progressively enhance my abilities
+            across a diverse array of technologies.
             <br />
           </p>
           <br />

@@ -39,15 +39,17 @@ const Header: FunctionComponent = () => {
 
   return (
     <header
-      className={`fixed top-0 w-full h-16 transition-all duration-300 ${
-        scrolled ? 'bg-white shadow-md' : 'bg-transparent'
+      className={`fixed top-0 w-full h-16 transition-all duration-200 ${
+        isMobile
+          ? scrolled
+            ? 'opacity-100 bg-white shadow-md'
+            : 'opacity-0'
+          : scrolled
+          ? 'bg-white shadow-md text-tertiary'
+          : 'bg-transparent text-white'
       }`}
     >
-      <div
-        className={`container h-full flex items-center ${
-          scrolled ? 'justify-between' : 'hidden'
-        }`}
-      >
+      <div className='container h-full flex items-center justify-between'>
         <div className='flex flex-row items-center space-x-2'>
           <Image
             priority
@@ -83,12 +85,7 @@ const Header: FunctionComponent = () => {
           className='menu-btn text-white'
           onClick={() => setIsMenuOpen(true)}
         >
-          <Image
-            src={scrolled ? burgerBlack : burgerWhite}
-            alt='Menu'
-            height={22}
-            width={22}
-          />
+          <Image src={burgerBlack} alt='Menu' height={22} width={22} />
         </div>
       </div>
       <nav id='overlay' className={`${isMenuOpen ? 'open' : 'closed'}`}>
