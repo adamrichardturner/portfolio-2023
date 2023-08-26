@@ -3,12 +3,12 @@ import Image from 'next/image'
 
 const Hero: FunctionComponent<{}> = () => {
   return (
-    <section className='hero bg-primary pb-12 pt-20 md:h-full flex flex-col items-center justify-center'>
+    <section className='hero min-h-screen bg-primary pb-12 pt-20 md:h-full flex flex-col items-center justify-center'>
       <div className='container space-y-8 md:space-y-24'>
         <div className='text-white'>
           <p>Hello, my name is</p>
           <div className='flex flex-row space-x-3'>
-            <h1 className='text-5xl font-black leading-none pb-4 md:pb-8'>
+            <h1 className='text-mobxl md:text-5xl font-black leading-none pb-4 md:pb-8'>
               Adam Turner
             </h1>
             <span className='hidden md:block text-5xl leading-none'>👋</span>
@@ -21,11 +21,14 @@ const Hero: FunctionComponent<{}> = () => {
             based in London, skilled in crafting websites and applications using
             React, Next, JavaScript and TypeScript.
             <br />
+            <br /> If you&apos;re looking for someone to help bring your web
+            projects to life, you&apos;ve come to the right place!
             <br />
-            My greatest strengths are in Front End with solid commercial
-            experience in this area. I am ambitious to progressively enhance my
-            abilities across a diverse array of technologies and keen to work on
-            either end of the spectrum.
+            <br />
+            My greatest strengths are in Front End with excellent commercial
+            experience in this area. My ambition is to progressively enhance my
+            abilities across a diverse array of technologies and I am keen to
+            work on either end of the spectrum.
             <br />
           </p>
           <br />

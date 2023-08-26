@@ -4,7 +4,6 @@
 
 /* Section Heights  */
 
-.hero,
 .projects,
 .media,
 .contact {
@@ -51,7 +50,7 @@
 .close-button {
   position: absolute;
   top: 1.25rem;
-  right: 1.15rem;
+  right: 1rem;
   cursor: pointer;
 }
 
