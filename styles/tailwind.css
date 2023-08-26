@@ -11,15 +11,6 @@
   min-height: 720px;
 }
 
-@media (max-width: 1024px) {
-  .hero,
-  .projects,
-  .media,
-  .contact {
-    min-height: 100vh;
-  }
-}
-
 /* Hero */
 
 .hero {
@@ -59,8 +50,8 @@
 
 .close-button {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 1.25rem;
+  right: 1.15rem;
   cursor: pointer;
 }
 
