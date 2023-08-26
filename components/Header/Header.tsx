@@ -6,11 +6,17 @@ import burgerBlack from '../../public/burger-menu-black.svg'
 const Header: FunctionComponent = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
   const [scrolled, setScrolled] = useState<boolean>(false)
+  const [isMobile, setIsMobile] = useState<boolean>(false)
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 640 && isMenuOpen) {
         setIsMenuOpen(false)
+      }
+      if (window.innerWidth < 640) {
+        setIsMobile(true)
+      } else {
+        setIsMobile(false)
       }
     }
 
@@ -37,7 +43,11 @@ const Header: FunctionComponent = () => {
         scrolled ? 'bg-white shadow-md' : 'bg-transparent'
       }`}
     >
-      <div className='container h-full flex items-center justify-between'>
+      <div
+        className={`container h-full flex items-center ${
+          scrolled ? 'justify-between' : 'hidden'
+        }`}
+      >
         <div className='flex flex-row items-center space-x-2'>
           <Image
             priority
@@ -48,8 +58,8 @@ const Header: FunctionComponent = () => {
             height={42}
           />
           <h3
-            className={`text-tertiary font-medium ${
-              scrolled ? '' : 'text-white'
+            className={`font-medium ${
+              scrolled ? 'text-tertiary' : 'text-white'
             }`}
           >
             Adam Turner
