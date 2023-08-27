@@ -40,9 +40,9 @@ const Hero: FunctionComponent<{}> = () => {
             <Image
               src='/skills/javascript.svg'
               alt='JavaScript'
-              height={0}
-              width={0}
-              style={{ width: 'auto', height: '25px' }}
+              height={40}
+              width={40}
+              style={{ padding: '5px' }}
             />
             <span className='leading-none'>JavaScript</span>
           </div>
@@ -50,9 +50,9 @@ const Hero: FunctionComponent<{}> = () => {
             <Image
               src='/skills/typescript.svg'
               alt='TypeScript'
-              height={0}
-              width={0}
-              style={{ width: 'auto', height: '25px' }}
+              height={40}
+              width={40}
+              style={{ padding: '5px' }}
             />
             <span className='leading-none'>TypeScript</span>
           </div>
@@ -60,9 +60,9 @@ const Hero: FunctionComponent<{}> = () => {
             <Image
               src='/skills/react.svg'
               alt='React'
-              height={0}
-              width={0}
-              style={{ width: 'auto', height: '25px' }}
+              height={40}
+              width={40}
+              style={{ padding: '5px' }}
             />
             <span className='leading-none'>React</span>
           </div>
@@ -70,9 +70,9 @@ const Hero: FunctionComponent<{}> = () => {
             <Image
               src='/skills/next.svg'
               alt='Next.js'
-              height={0}
-              width={0}
-              style={{ width: 'auto', height: '25px' }}
+              height={40}
+              width={40}
+              style={{ padding: '5px' }}
             />
             <span className='leading-none'>Next.js</span>
           </div>
@@ -80,9 +80,9 @@ const Hero: FunctionComponent<{}> = () => {
             <Image
               src='/skills/node.svg'
               alt='Node.js'
-              height={0}
-              width={0}
-              style={{ width: 'auto', height: '25px' }}
+              height={40}
+              width={40}
+              style={{ padding: '5px' }}
             />
             <span className='leading-none'>Node.js</span>
           </div>
@@ -90,9 +90,9 @@ const Hero: FunctionComponent<{}> = () => {
             <Image
               src='/skills/mongo.svg'
               alt='MongoDB'
-              height={0}
-              width={0}
-              style={{ width: 'auto', height: '25px' }}
+              height={40}
+              width={40}
+              style={{ padding: '5px' }}
             />
             <span className='leading-none'>MongoDB</span>
           </div>
@@ -100,9 +100,9 @@ const Hero: FunctionComponent<{}> = () => {
             <Image
               src='/skills/redux.svg'
               alt='Redux'
-              height={0}
-              width={0}
-              style={{ width: 'auto', height: '25px' }}
+              height={40}
+              width={40}
+              style={{ padding: '5px' }}
             />
             <span className='leading-none'>Redux</span>
           </div>
@@ -110,9 +110,9 @@ const Hero: FunctionComponent<{}> = () => {
             <Image
               src='/skills/wordpress.svg'
               alt='WordPress'
-              height={0}
-              width={0}
-              style={{ width: 'auto', height: '25px' }}
+              height={40}
+              width={40}
+              style={{ padding: '5px' }}
             />
             <span className='leading-none'>WordPress</span>
           </div>
