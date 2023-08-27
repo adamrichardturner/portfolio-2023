@@ -3,12 +3,15 @@ import Image from 'next/image'
 
 const Hero: FunctionComponent<{}> = () => {
   return (
-    <section className='hero min-h-screen bg-primary pb-12 pt-20 md:h-full flex flex-col items-center justify-center'>
+    <section
+      id='hero'
+      className='hero min-h-screen bg-primary pb-12 pt-20 md:h-full flex flex-col items-center justify-center'
+    >
       <div className='container space-y-8 md:space-y-24'>
         <div className='text-white'>
           <p>Hello, my name is</p>
           <div className='flex flex-row space-x-3'>
-            <h1 className='text-mobxl md:text-5xl font-black leading-none pb-4 md:pb-8'>
+            <h1 className='text-xxl md:text-5xl font-black leading-none pb-4 md:pb-8'>
               Adam Turner
             </h1>
             <span className='hidden md:block text-5xl leading-none'>👋</span>

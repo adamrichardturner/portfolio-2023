@@ -1,21 +1,42 @@
 import { FunctionComponent } from 'react'
-import Image from 'next/image'
+import YouTubePlayer from './YouTubePlayer'
 
 const Media: FunctionComponent<{}> = () => {
   return (
-    <section className='h-16 container max-w-1100 mx-auto flex items-center justify-between'>
-      <div className='flex flex-row items-center'>
-        <Image src='/adam-thumb.png' width={42} height={42} alt='Adam Turner' />
-        <h3>Adam Turner</h3>
+    <section
+      id='media'
+      className='media min-h-screen text-white pt-16 pb-16 mx-auto flex flex-col items-center justify-center'
+    >
+      <div className='container'>
+        <div className='flex flex-col items-center justify-center'>
+          <h2 className='text-3xl md:text-1xl font-bold leading-none pb-8'>
+            Media
+          </h2>
+          <div className='bg-secondary py-1 px-5 rounded-xl'></div>
+          <p className='mt-4 text-center pb-14'>
+            Check out my YouTube Channel{' '}
+            <span className='font-bold'>Code FullStack</span> where you can
+            follow along with my build in public video journals <br /> and code
+            solutions to common code challenges.
+          </p>
+        </div>
+        <div className='playerWrapper'>
+          <div className='player'>
+            <YouTubePlayer videoId='b-AJvc8aQyk' />
+          </div>
+        </div>
+        <div className='flex items-center justify-center pt-10'>
+          <a
+            href='https://www.youtube.com/@codefullstack'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <div className='bg-secondary hover:shadow-lg transition-shadow ease-in-out w-44 px-8 shadow py-4 rounded-lg text-center font-bold text-base text-white'>
+              {'View Channel > '}
+            </div>
+          </a>
+        </div>
       </div>
-      <nav>
-        <ul className='flex flex-row items-center justify-end list-none space-x-4'>
-          <li>Projects</li>
-          <li>Media</li>
-          <li>Contact</li>
-          <li>View CV</li>
-        </ul>
-      </nav>
     </section>
   )
 }
