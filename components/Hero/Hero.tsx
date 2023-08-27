@@ -38,83 +38,65 @@ const Hero: FunctionComponent<{}> = () => {
         <div className='grid grid-cols-2 lg:grid-cols-4 gap-6 text-xs md:text-sm text-caption'>
           <div className='flex items-center justify-center bg-white py-3.5 h-12 rounded-lg space-x-2'>
             <Image
-              src='/skills/javascript.svg'
+              src='/skills/javascript.png'
               alt='JavaScript'
-              height={40}
-              width={40}
-              style={{ padding: '5px' }}
+              height={32}
+              width={32}
             />
             <span className='leading-none'>JavaScript</span>
           </div>
           <div className='flex items-center justify-center bg-white py-3.5 h-12 rounded-lg space-x-2'>
             <Image
-              src='/skills/typescript.svg'
+              src='/skills/typescript.png'
               alt='TypeScript'
-              height={40}
-              width={40}
-              style={{ padding: '5px' }}
+              height={32}
+              width={32}
             />
             <span className='leading-none'>TypeScript</span>
           </div>
           <div className='flex items-center justify-center bg-white py-3.5 h-12 rounded-lg space-x-2'>
-            <Image
-              src='/skills/react.svg'
-              alt='React'
-              height={40}
-              width={40}
-              style={{ padding: '5px' }}
-            />
+            <Image src='/skills/react.png' alt='React' height={32} width={32} />
             <span className='leading-none'>React</span>
           </div>
           <div className='flex items-center justify-center bg-white py-3.5 h-12 rounded-lg space-x-2'>
             <Image
-              src='/skills/next.svg'
+              src='/skills/next.png'
               alt='Next.js'
-              height={40}
-              width={40}
-              style={{ padding: '5px' }}
+              height={32}
+              width={32}
             />
             <span className='leading-none'>Next.js</span>
           </div>
-          <div className='flex items-center justify-center bg-white py-3.5 h-12 rounded-lg space-x-2'>
+          <div className='flex items-center justify-center leading-none bg-white py-3.5 h-12 rounded-lg space-x-2'>
             <Image
-              src='/skills/node.svg'
-              alt='Node.js'
-              height={40}
-              width={40}
-              style={{ padding: '5px' }}
+              src='/skills/express.png'
+              alt='Express.js'
+              height={32}
+              width={32}
             />
-            <span className='leading-none'>Node.js</span>
+            <span className='leading-none'>Express.js</span>
           </div>
           <div className='flex items-center justify-center bg-white py-3.5 h-12 rounded-lg space-x-2'>
             <Image
-              src='/skills/mongo.svg'
+              src='/skills/mongo.png'
               alt='MongoDB'
-              height={40}
-              width={40}
-              style={{ padding: '5px' }}
+              height={32}
+              width={32}
             />
             <span className='leading-none'>MongoDB</span>
           </div>
           <div className='flex items-center justify-center bg-white py-3.5 h-12 rounded-lg space-x-2'>
             <Image
-              src='/skills/redux.svg'
-              alt='Redux'
-              height={40}
-              width={40}
-              style={{ padding: '5px' }}
+              src='/skills/node.png'
+              alt='Node.js'
+              height={32}
+              width={32}
             />
-            <span className='leading-none'>Redux</span>
+            <span className='leading-none'>Node.js</span>
           </div>
-          <div className='flex items-center justify-center leading-none bg-white py-3.5 h-12 rounded-lg space-x-2'>
-            <Image
-              src='/skills/wordpress.svg'
-              alt='WordPress'
-              height={40}
-              width={40}
-              style={{ padding: '5px' }}
-            />
-            <span className='leading-none'>WordPress</span>
+          <div className='flex items-center justify-center bg-white py-3.5 h-12 rounded-lg space-x-2'>
+            <Image src='/skills/redux.png' alt='Redux' height={26} width={26} />
+            <span className='leading-none'>Redux</span>
           </div>
         </div>
       </div>

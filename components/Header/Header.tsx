@@ -68,8 +68,8 @@ const Header: FunctionComponent = ({}) => {
               className='rounded-full'
               src='/adam-thumb.png'
               alt='Adam Turner'
-              width={42}
-              height={42}
+              width={40}
+              height={40}
             />
             <h3
               className={`font-medium ${
