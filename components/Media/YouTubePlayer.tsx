@@ -1,10 +1,11 @@
+import { FunctionComponent } from 'react'
 import YouTube from 'react-youtube'
 
 interface YouTubePlayerProps {
   videoId: string
 }
 
-const YouTubePlayer: React.FC<YouTubePlayerProps> = ({ videoId }) => {
+const YouTubePlayer: FunctionComponent<YouTubePlayerProps> = ({ videoId }) => {
   const onError = (error: any) => {
     console.error('YouTube Player Error:', error)
   }

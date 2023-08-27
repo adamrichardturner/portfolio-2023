@@ -16,7 +16,7 @@ const Media: FunctionComponent<{}> = () => {
           <p className='mt-4 text-center pb-14'>
             Check out my YouTube Channel{' '}
             <span className='font-bold'>Code FullStack</span> where you can
-            follow along with my build in public video journals <br /> and code
+            follow along with my build in public video journals and code
             solutions to common code challenges.
           </p>
         </div>

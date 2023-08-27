@@ -21,6 +21,7 @@ const config: Config = {
         'form-border': '#E7E7E7',
       },
       fontSize: {
+        xs: '0.65rem',
         sm: '0.8rem',
         base: '1rem',
         lg: '2rem',
@@ -42,6 +43,14 @@ const config: Config = {
           xl: '1024px',
           '2xl': '1024px',
         },
+      },
+      screens: {
+        xs: '360px',
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+        '2xl': '1536px',
       },
       boxShadow: {
         md: `0px 6px 16px 0px rgba(0, 0, 0, 0.06)`,

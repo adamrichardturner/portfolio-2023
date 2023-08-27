@@ -25,8 +25,9 @@ const Contact: FunctionComponent<{}> = () => {
             </h2>
             <div className='bg-secondary py-1 px-5 rounded-xl'></div>
             <p className='mt-4 text-center pb-14'>
-              Interested in working together? Fill out the form below and I will
-              be in touch soon
+              Interested in working together?
+              <br />
+              Fill out the form below and I will be in touch soon
             </p>
           </div>
           <div className='bg-white w-full py-8 px-8 rounded-2xl shadow-lg'>

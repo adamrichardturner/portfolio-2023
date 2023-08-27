@@ -55,9 +55,6 @@ const Projects: FunctionComponent<{}> = () => {
                 <div className='bg-light m-1.5 px-3 py-1.5 rounded-lg'>
                   MongoDB
                 </div>
-                <div className='bg-light m-1.5 px-3 py-1.5 rounded-lg'>
-                  MaterialUI
-                </div>
               </div>
               <div className='flex flex-row space-x-2 text-center pt-8'>
                 <a href='https://blogz.dev' target='_blank'>

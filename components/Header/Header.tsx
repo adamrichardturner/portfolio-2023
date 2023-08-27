@@ -6,7 +6,9 @@ import { Link, animateScroll as scroll } from 'react-scroll'
 const Header: FunctionComponent = ({}) => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
   const [scrolled, setScrolled] = useState<boolean>(false)
-  const [isMobile, setIsMobile] = useState<boolean>(false)
+  const [isMobile, setIsMobile] = useState<boolean>(
+    typeof window !== 'undefined' && window.innerWidth < 640
+  )
 
   useEffect(() => {
     const handleResize = () => {
@@ -28,6 +30,8 @@ const Header: FunctionComponent = ({}) => {
       }
     }
 
+    handleResize()
+
     window.addEventListener('resize', handleResize)
     window.addEventListener('scroll', handleScroll)
 
@@ -35,7 +39,7 @@ const Header: FunctionComponent = ({}) => {
       window.removeEventListener('resize', handleResize)
       window.removeEventListener('scroll', handleScroll)
     }
-  }, [isMenuOpen])
+  }, [isMenuOpen, isMobile, scrolled])
 
   return (
     <header
@@ -118,9 +122,16 @@ const Header: FunctionComponent = ({}) => {
                 Contact
               </Link>
             </li>
-            <li className='bg-secondary px-5 shadow py-2.5 rounded-lg font-normal text-base text-white'>
-              View CV
-            </li>
+            <a
+              href='/adamturner-cv.pdf'
+              target='_blank'
+              rel='noreferrer'
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <li className='bg-secondary px-5 shadow py-2.5 rounded-lg font-normal text-base text-white'>
+                View CV
+              </li>
+            </a>
           </ul>
         </nav>
         <div
@@ -179,7 +190,14 @@ const Header: FunctionComponent = ({}) => {
               Contact
             </Link>
           </li>
-          <li>View CV</li>
+          <a
+            href='/adamturner-cv.pdf'
+            target='_blank'
+            rel='noreferrer'
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <li>View CV</li>
+          </a>
         </ul>
       </nav>
     </header>

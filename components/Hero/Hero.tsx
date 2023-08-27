@@ -25,9 +25,9 @@ const Hero: FunctionComponent<{}> = () => {
             React, Next, JavaScript and TypeScript.
             <br />
             <br />
-            My greatest strengths are in Front End, with excellent commercial
-            experience in this area. I aim to progressively enhance my abilities
-            across a diverse array of technologies.
+            My greatest strengths are in Front End. I have excellent commercial
+            experience in this area, with a keen interest to expand my skillset
+            in a diverse range of technologies.
             <br />
           </p>
           <br />
@@ -35,58 +35,86 @@ const Hero: FunctionComponent<{}> = () => {
             I am open to new opportunities on-site in London or remote.
           </h3>
         </div>
-        <div className='grid grid-cols-2 md:grid-cols-4 gap-6 text-sm text-caption'>
+        <div className='grid grid-cols-2 lg:grid-cols-4 gap-6 text-xs md:text-sm text-caption'>
           <div className='flex items-center justify-center bg-white py-3.5 h-12 rounded-lg space-x-2'>
             <Image
               src='/skills/javascript.svg'
               alt='JavaScript'
-              width={25}
-              height={25}
+              height={0}
+              width={0}
+              style={{ width: 'auto', height: '25px' }}
             />
-            <span className='text-sm'>JavaScript</span>
+            <span className='leading-none'>JavaScript</span>
           </div>
           <div className='flex items-center justify-center bg-white py-3.5 h-12 rounded-lg space-x-2'>
             <Image
               src='/skills/typescript.svg'
               alt='TypeScript'
-              width={25}
-              height={25}
+              height={0}
+              width={0}
+              style={{ width: 'auto', height: '25px' }}
             />
-            <span className='text-sm'>TypeScript</span>
+            <span className='leading-none'>TypeScript</span>
           </div>
           <div className='flex items-center justify-center bg-white py-3.5 h-12 rounded-lg space-x-2'>
-            <Image src='/skills/react.svg' alt='React' width={25} height={25} />
-            <span className='text-sm'>React</span>
+            <Image
+              src='/skills/react.svg'
+              alt='React'
+              height={0}
+              width={0}
+              style={{ width: 'auto', height: '25px' }}
+            />
+            <span className='leading-none'>React</span>
           </div>
           <div className='flex items-center justify-center bg-white py-3.5 h-12 rounded-lg space-x-2'>
-            <Image src='/skills/next.svg' alt='Next' width={25} height={25} />
-            <span className='text-sm'>Next.js</span>
+            <Image
+              src='/skills/next.svg'
+              alt='Next.js'
+              height={0}
+              width={0}
+              style={{ width: 'auto', height: '25px' }}
+            />
+            <span className='leading-none'>Next.js</span>
           </div>
           <div className='flex items-center justify-center bg-white py-3.5 h-12 rounded-lg space-x-2'>
-            <Image src='/skills/node.svg' alt='Node' width={60} height={25} />
-            <span className='text-sm'>Node</span>
+            <Image
+              src='/skills/node.svg'
+              alt='Node.js'
+              height={0}
+              width={0}
+              style={{ width: 'auto', height: '25px' }}
+            />
+            <span className='leading-none'>Node.js</span>
           </div>
           <div className='flex items-center justify-center bg-white py-3.5 h-12 rounded-lg space-x-2'>
             <Image
               src='/skills/mongo.svg'
               alt='MongoDB'
-              width={60}
-              height={25}
+              height={0}
+              width={0}
+              style={{ width: 'auto', height: '25px' }}
             />
-            <span className='text-sm'>MongoDB</span>
-          </div>
-          <div className='flex items-center justify-center bg-white py-3.5 h-12 rounded-lg space-x-2'>
-            <Image src='/skills/redux.svg' alt='Redux' width={25} height={25} />
-            <span className='text-sm'>Redux</span>
+            <span className='leading-none'>MongoDB</span>
           </div>
           <div className='flex items-center justify-center bg-white py-3.5 h-12 rounded-lg space-x-2'>
             <Image
+              src='/skills/redux.svg'
+              alt='Redux'
+              height={0}
+              width={0}
+              style={{ width: 'auto', height: '25px' }}
+            />
+            <span className='leading-none'>Redux</span>
+          </div>
+          <div className='flex items-center justify-center leading-none bg-white py-3.5 h-12 rounded-lg space-x-2'>
+            <Image
               src='/skills/wordpress.svg'
               alt='WordPress'
-              width={25}
-              height={25}
+              height={0}
+              width={0}
+              style={{ width: 'auto', height: '25px' }}
             />
-            <span className='text-sm'>WordPress</span>
+            <span className='leading-none'>WordPress</span>
           </div>
         </div>
       </div>
