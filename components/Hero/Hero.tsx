@@ -21,8 +21,10 @@ const Hero: FunctionComponent<{}> = () => {
             <span className='font-bold text-secondary'>
               Full Stack Developer
             </span>{' '}
-            based in London, skilled in crafting websites and applications using
-            React, Next, JavaScript and TypeScript.
+            based in London, skilled at crafting websites and applications using
+            React, Next, JavaScript, TypeScript, Express and MongoDB, though I
+            am very capable of learning new skills fast and happy to work in any
+            environment.
             <br />
             <br />
             My greatest strengths are in Front End. I have excellent commercial

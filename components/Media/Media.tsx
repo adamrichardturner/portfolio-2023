@@ -17,7 +17,7 @@ const Media: FunctionComponent<{}> = () => {
             Check out my YouTube Channel{' '}
             <span className='font-bold'>Code FullStack</span> where you can
             follow along with my build in public video journals and code
-            solutions to common code challenges.
+            solutions to common code challenges
           </p>
         </div>
         <div className='playerWrapper'>
