@@ -32,6 +32,12 @@ const Header: FunctionComponent = ({}) => {
       }
     }
 
+    if (isMenuOpen) {
+      document.body.style.overflowY = 'hidden'
+    } else {
+      document.body.style.overflowY = 'auto'
+    }
+
     handleResize()
 
     window.addEventListener('resize', handleResize)
@@ -40,6 +46,7 @@ const Header: FunctionComponent = ({}) => {
     return () => {
       window.removeEventListener('resize', handleResize)
       window.removeEventListener('scroll', handleScroll)
+      document.body.style.overflowY = 'auto'
     }
   }, [isMenuOpen, isMobile, scrolled])
 
