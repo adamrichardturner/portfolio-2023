@@ -1,4 +1,4 @@
-# Adam Turner Portfolio | Next.js, TypeScript and Tailwind Single Page Portfolio
+# Adam Turner Portfolio | Next.js, TypeScript and Tailwind Single Page Design
 
 This is my professional developer portfolio showcasing a curation of selected projects that highlight my skills and interests as a full stack developer, including my CV, other media and contact details.
 
