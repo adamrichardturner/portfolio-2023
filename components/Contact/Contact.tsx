@@ -39,7 +39,7 @@ const Contact: FunctionComponent<{}> = () => {
             </h3>
             <div className='flex pt-4 flex-row space-x-2 pb-6'>
               <a href='mailto:hello@adamrichardturner.dev'>
-                <div className='hover:shadow-lg transition-shadow ease-in-out'>
+                <div className='hover:shadow-lg transition-shadow ease-in-out h-8'>
                   <FontAwesomeIcon icon={faSquareEnvelope} className='h-9' />
                 </div>
               </a>
@@ -48,7 +48,7 @@ const Contact: FunctionComponent<{}> = () => {
                 target='_blank'
                 rel='noreferrer'
               >
-                <div className='hover:shadow-lg transition-shadow ease-in-out'>
+                <div className='hover:shadow-lg transition-shadow ease-in-out h-8'>
                   <FontAwesomeIcon icon={faLinkedin} className='h-9' />
                 </div>
               </a>
@@ -57,7 +57,7 @@ const Contact: FunctionComponent<{}> = () => {
                 target='_blank'
                 rel='noreferrer'
               >
-                <div className='hover:shadow-lg transition-shadow ease-in-out'>
+                <div className='hover:shadow-lg transition-shadow ease-in-out h-8'>
                   <FontAwesomeIcon icon={faSquareGithub} className='h-9' />
                 </div>
               </a>
@@ -66,7 +66,7 @@ const Contact: FunctionComponent<{}> = () => {
                 target='_blank'
                 rel='noreferrer'
               >
-                <div className='hover:shadow-lg transition-shadow ease-in-out'>
+                <div className='hover:shadow-lg transition-shadow ease-in-out h-8'>
                   <FontAwesomeIcon icon={faSquareXTwitter} className='h-9' />
                 </div>
               </a>
@@ -75,7 +75,7 @@ const Contact: FunctionComponent<{}> = () => {
                 target='_blank'
                 rel='noreferrer'
               >
-                <div className='hover:shadow-lg transition-shadow ease-in-out'>
+                <div className='hover:shadow-lg transition-shadow ease-in-out h-8'>
                   <FontAwesomeIcon icon={faSquareYoutube} className='h-9' />
                 </div>
               </a>
