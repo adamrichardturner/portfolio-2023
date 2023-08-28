@@ -37,7 +37,7 @@ const Hero: FunctionComponent<{}> = () => {
             I am open to new opportunities on-site in London or remote.
           </h3>
         </div>
-        <div className='grid grid-cols-2 lg:grid-cols-4 gap-6 text-xs md:text-sm text-caption'>
+        <div className='hero-skills grid grid-cols-2 lg:grid-cols-4 gap-6 text-xs md:text-sm text-caption'>
           <div className='flex items-center justify-center bg-white py-3.5 h-12 rounded-lg space-x-2'>
             <Image
               src='/skills/javascript.png'
@@ -71,12 +71,12 @@ const Hero: FunctionComponent<{}> = () => {
           </div>
           <div className='flex items-center justify-center leading-none bg-white py-3.5 h-12 rounded-lg space-x-2'>
             <Image
-              src='/skills/express.png'
-              alt='Express.js'
+              src='/skills/tailwind.png'
+              alt='Tailwind'
               height={32}
               width={32}
             />
-            <span className='leading-none'>Express.js</span>
+            <span className='leading-none'>Tailwind</span>
           </div>
           <div className='flex items-center justify-center bg-white py-3.5 h-12 rounded-lg space-x-2'>
             <Image
