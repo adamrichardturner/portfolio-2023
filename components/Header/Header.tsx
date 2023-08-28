@@ -1,6 +1,8 @@
 import { useState, useEffect, FunctionComponent } from 'react'
 import Image from 'next/image'
 import burgerBlack from '../../public/burger-menu-black.svg'
+import burgerWhite from '../../public/burger-menu-white.svg'
+
 import { Link, animateScroll as scroll } from 'react-scroll'
 
 const Header: FunctionComponent = ({}) => {
@@ -23,7 +25,7 @@ const Header: FunctionComponent = ({}) => {
     }
 
     const handleScroll = () => {
-      if (window.scrollY > 20) {
+      if (window.scrollY > 15) {
         setScrolled(true)
       } else {
         setScrolled(false)
@@ -43,11 +45,11 @@ const Header: FunctionComponent = ({}) => {
 
   return (
     <header
-      className={`z-10 fixed top-0 w-full h-16 transition-all duration-200 ${
+      className={`z-10 fixed top-0 w-full h-16 transition-all ease-in-out duration-200 ${
         isMobile
           ? scrolled
-            ? 'opacity-100 bg-white shadow-md'
-            : 'opacity-0'
+            ? 'bg-white text-tertiary shadow-md'
+            : 'bg-transparent text-white'
           : scrolled
           ? 'bg-white shadow-md text-tertiary'
           : 'bg-transparent text-white'
@@ -128,7 +130,7 @@ const Header: FunctionComponent = ({}) => {
               rel='noreferrer'
               onClick={() => setIsMenuOpen(false)}
             >
-              <li className='bg-secondary px-5 shadow py-2.5 rounded-lg font-normal text-base text-white'>
+              <li className='bg-secondary px-5 shadow hover:shadow-lg py-2.5 rounded-lg font-normal text-base text-white'>
                 View CV
               </li>
             </a>
@@ -138,7 +140,12 @@ const Header: FunctionComponent = ({}) => {
           className='menu-btn text-white'
           onClick={() => setIsMenuOpen(true)}
         >
-          <Image src={burgerBlack} alt='Menu' height={22} width={22} />
+          <Image
+            src={scrolled ? burgerBlack : burgerWhite}
+            alt='Menu'
+            height={22}
+            width={22}
+          />
         </div>
       </div>
       <nav id='overlay' className={`${isMenuOpen ? 'open' : 'closed'}`}>
