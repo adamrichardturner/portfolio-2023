@@ -16,7 +16,7 @@ const config: Config = {
         caption: '#3A3A3A',
         light: '#F3F3F3',
         cream: '#F8F8F8',
-        captiontext: '#484848',
+        captiontext: '#1E1E1E',
         'form-input': '#F6F6F6',
         'form-border': '#E7E7E7',
       },
