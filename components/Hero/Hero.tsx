@@ -45,7 +45,9 @@ const Hero: FunctionComponent<{}> = () => {
               height={32}
               width={32}
             />
-            <span className='leading-none'>JavaScript</span>
+            <div className='leading-none flex items-center justify-center h-full'>
+              JavaScript
+            </div>
           </div>
           <div className='flex items-center justify-center bg-white py-3.5 h-12 rounded-lg space-x-2'>
             <Image
@@ -54,11 +56,15 @@ const Hero: FunctionComponent<{}> = () => {
               height={32}
               width={32}
             />
-            <span className='leading-none'>TypeScript</span>
+            <div className='leading-none flex items-center justify-center h-full'>
+              TypeScript
+            </div>
           </div>
           <div className='flex items-center justify-center bg-white py-3.5 h-12 rounded-lg space-x-2'>
             <Image src='/skills/react.png' alt='React' height={32} width={32} />
-            <span className='leading-none'>React</span>
+            <div className='leading-none flex items-center justify-center h-full'>
+              React
+            </div>
           </div>
           <div className='flex items-center justify-center bg-white py-3.5 h-12 rounded-lg space-x-2'>
             <Image
@@ -67,7 +73,9 @@ const Hero: FunctionComponent<{}> = () => {
               height={32}
               width={32}
             />
-            <span className='leading-none'>Next.js</span>
+            <div className='leading-none flex items-center justify-center h-full'>
+              Next.js
+            </div>
           </div>
           <div className='flex items-center justify-center leading-none bg-white py-3.5 h-12 rounded-lg space-x-2'>
             <Image
@@ -76,7 +84,9 @@ const Hero: FunctionComponent<{}> = () => {
               height={32}
               width={32}
             />
-            <span className='leading-none'>Tailwind</span>
+            <div className='leading-none flex items-center justify-center h-full'>
+              Tailwind
+            </div>
           </div>
           <div className='flex items-center justify-center bg-white py-3.5 h-12 rounded-lg space-x-2'>
             <Image
@@ -85,7 +95,9 @@ const Hero: FunctionComponent<{}> = () => {
               height={32}
               width={32}
             />
-            <span className='leading-none'>MongoDB</span>
+            <div className='leading-none flex items-center justify-center h-full'>
+              MongoDB
+            </div>
           </div>
           <div className='flex items-center justify-center bg-white py-3.5 h-12 rounded-lg space-x-2'>
             <Image
@@ -94,11 +106,15 @@ const Hero: FunctionComponent<{}> = () => {
               height={32}
               width={32}
             />
-            <span className='leading-none'>Node.js</span>
+            <div className='leading-none flex items-center justify-center h-full'>
+              Node.js
+            </div>
           </div>
           <div className='flex items-center justify-center bg-white py-3.5 h-12 rounded-lg space-x-2'>
             <Image src='/skills/redux.png' alt='Redux' height={26} width={26} />
-            <span className='leading-none'>Redux</span>
+            <div className='leading-none flex items-center justify-center h-full'>
+              Redux
+            </div>
           </div>
         </div>
       </div>
