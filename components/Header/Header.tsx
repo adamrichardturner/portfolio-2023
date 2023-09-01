@@ -150,8 +150,8 @@ const Header: FunctionComponent = ({}) => {
           <Image
             src={scrolled ? burgerBlack : burgerWhite}
             alt='Menu'
-            height={22}
-            width={22}
+            height={18}
+            width={18}
           />
         </div>
       </div>
@@ -161,8 +161,8 @@ const Header: FunctionComponent = ({}) => {
           alt='Close'
           className='close-button'
           onClick={() => setIsMenuOpen(false)}
-          width={22}
-          height={22}
+          width={18}
+          height={18}
         />
         <ul className='flex flex-col h-full text-2xl space-y-8 text-white items-center justify-center list-none'>
           <li>
