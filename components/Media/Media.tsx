@@ -14,20 +14,18 @@ const Media: FunctionComponent<{}> = () => {
           </h2>
           <div className='bg-secondary py-1 px-5 rounded-xl'></div>
           <p className='mt-4 text-center pb-14'>
-            Check out my YouTube Channel{' '}
-            <span className='font-bold'>Code FullStack</span> where you can
-            follow along with my build in public video journals and code
-            solutions to common code challenges
+            Check out my YouTube Channel where you can follow along with my
+            build in public video journals and development progress.
           </p>
         </div>
         <div className='playerWrapper'>
           <div className='player'>
-            <YouTubePlayer videoId='b-AJvc8aQyk' />
+            <YouTubePlayer videoId='7fWE_9HhiXo' />
           </div>
         </div>
         <div className='flex items-center justify-center pt-10'>
           <a
-            href='https://www.youtube.com/@codefullstack'
+            href='https://www.youtube.com/@adamrichardturner'
             target='_blank'
             rel='noreferrer'
           >

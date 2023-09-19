@@ -71,7 +71,7 @@ const Contact: FunctionComponent<{}> = () => {
                 </div>
               </a>
               <a
-                href='https://www.youtube.com/@codefullstack'
+                href='https://www.youtube.com/@adamrichardturner'
                 target='_blank'
                 rel='noreferrer'
               >
