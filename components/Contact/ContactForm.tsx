@@ -55,7 +55,7 @@ const ContactForm: React.FC = () => {
       />
       <ValidationError prefix='Message' field='message' errors={state.errors} />
       <button
-        className='bg-secondary hover:shadow-lg transition-shadow ease-in-out w-full sm:w-24 px-8 shadow mt-12 py-3 rounded-lg font-bold text-base text-white'
+        className='bg-secondary hover:shadow-lg transition-shadow ease-in-out w-full sm:w-24 px-8 shadow mt-12 py-3 rounded-lg font-bold text-base text-primary'
         type='submit'
         id='submit'
         disabled={state.submitting}

@@ -58,7 +58,7 @@ const Projects: FunctionComponent<{}> = () => {
               </div>
               <div className='flex flex-row space-x-2 text-center pt-8'>
                 <a href='https://blogz.dev' target='_blank'>
-                  <div className='bg-secondary hover:shadow-lg transition-shadow ease-in-out w-24 px-5 shadow py-2.5 rounded-lg font-normal text-base text-white'>
+                  <div className='bg-secondary hover:shadow-lg transition-shadow ease-in-out w-24 px-5 shadow py-2.5 rounded-lg font-normal text-base text-primary'>
                     Demo
                   </div>
                 </a>
@@ -108,7 +108,7 @@ const Projects: FunctionComponent<{}> = () => {
               </div>
               <div className='flex flex-row space-x-2 text-center pt-8'>
                 <a href='https://reactnews.app' target='_blank'>
-                  <div className='bg-secondary hover:shadow-lg transition-shadow ease-in-out w-24 px-5 shadow py-2.5 rounded-lg font-normal text-base text-white'>
+                  <div className='bg-secondary hover:shadow-lg transition-shadow ease-in-out w-24 px-5 shadow py-2.5 rounded-lg font-normal text-base text-primary'>
                     Demo
                   </div>
                 </a>
@@ -162,7 +162,7 @@ const Projects: FunctionComponent<{}> = () => {
               </div>
               <div className='flex flex-row space-x-2 text-center pt-8'>
                 <a href='https://exploremovies.app' target='_blank'>
-                  <div className='bg-secondary hover:shadow-lg transition-shadow ease-in-out w-24 px-5 shadow py-2.5 rounded-lg font-normal text-base text-white'>
+                  <div className='bg-secondary hover:shadow-lg transition-shadow ease-in-out w-24 px-5 shadow py-2.5 rounded-lg font-normal text-base text-primary'>
                     Demo
                   </div>
                 </a>

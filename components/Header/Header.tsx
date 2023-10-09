@@ -137,7 +137,7 @@ const Header: FunctionComponent = ({}) => {
               rel='noreferrer'
               onClick={() => setIsMenuOpen(false)}
             >
-              <li className='bg-secondary px-5 shadow hover:shadow-lg py-2.5 rounded-lg font-normal text-base text-white'>
+              <li className='bg-secondary px-5 shadow hover:shadow-lg py-2.5 rounded-lg font-normal text-base text-primary'>
                 View CV
               </li>
             </a>
@@ -210,7 +210,7 @@ const Header: FunctionComponent = ({}) => {
             rel='noreferrer'
             onClick={() => setIsMenuOpen(false)}
           >
-            <li>View CV</li>
+            <li className='text-primary'>View CV</li>
           </a>
         </ul>
       </nav>

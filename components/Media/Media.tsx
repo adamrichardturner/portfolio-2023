@@ -29,7 +29,7 @@ const Media: FunctionComponent<{}> = () => {
             target='_blank'
             rel='noreferrer'
           >
-            <div className='bg-secondary hover:shadow-lg transition-shadow ease-in-out w-44 px-8 shadow py-4 rounded-lg text-center font-bold text-base text-white'>
+            <div className='bg-secondary hover:shadow-lg transition-shadow ease-in-out w-44 px-8 shadow py-4 rounded-lg text-center font-bold text-base text-primary'>
               {'View Channel > '}
             </div>
           </a>
