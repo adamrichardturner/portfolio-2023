@@ -9,7 +9,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top right;
-  background-color: #2f38d9;
+  background-color: #0c121c; /* old #2f38d9 */
 }
 
 .media {
@@ -17,7 +17,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom left;
-  background-color: #2f38d9;
+  background-color: #0c121c; /* old #2f38d9 */
 }
 
 /* Navigation Menu Styles */

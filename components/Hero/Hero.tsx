@@ -34,7 +34,7 @@ const Hero: FunctionComponent<{}> = () => {
           </p>
           <br />
           <h3 className='font-bold'>
-            I am open to new opportunities on-site in London or remote.
+            I am open to new opportunities in London or remote.
           </h3>
         </div>
         <div className='hero-skills grid grid-cols-2 lg:grid-cols-4 gap-6 text-xs md:text-sm font-bold text-caption'>
