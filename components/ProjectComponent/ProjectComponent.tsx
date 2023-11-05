@@ -14,13 +14,13 @@ const ProjectComponent: FC<ProjectComponentProps> = ({ project }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="p-4 m-2 bg-white rounded shadow-lg"
+      className="p-5 bg-white rounded shadow-lg"
     >
       {/* Project Image */}
       <div
         style={{
           position: 'relative',
-          height: '320px',
+          height: '240px',
           objectFit: 'cover'
         }}
       >
@@ -33,31 +33,31 @@ const ProjectComponent: FC<ProjectComponentProps> = ({ project }) => {
         />
       </div>
       {/* Project Title */}
-      <h3 className="text-lg font-bold">{project.title}</h3>
+      <h3 className="text-lg font-bold leading-none py-2">{project.title}</h3>
 
       {/* Project Description */}
-      <p className="text-gray-600">{project.description}</p>
+      <p className="text-body text-base pb-2">{project.description}</p>
 
       {/* Project Skills */}
-      <div className="flex flex-wrap mb-4">
+      <div className="flex flex-wrap mb-4 space-x-2">
         {project.skills.map((skill, index) => (
-          <span key={index} className="m-1 p-1 bg-gray-200 rounded">
+          <span
+            key={index}
+            className="m-0 p-2 text-sm bg-gray-200 rounded cursor-default"
+          >
             {skill}
           </span>
         ))}
       </div>
 
       {/* Project Links */}
-      <div className="flex justify-between items-center">
+      <div className="flex justify-end items-center">
         {/* Conditional rendering for Live Demo link */}
         {project.demoLink && (
-          <a
-            href={project.demoLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-500 hover:underline"
-          >
-            Live Demo
+          <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
+            <div className="bg-secondary hover:shadow-lg transition-shadow text-center ease-in-out w-24 px-4 shadow py-2 rounded-lg font-normal text-base text-primary mr-2">
+              Demo
+            </div>
           </a>
         )}
 
@@ -67,9 +67,10 @@ const ProjectComponent: FC<ProjectComponentProps> = ({ project }) => {
             href={project.githubLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 hover:underline"
           >
-            View on GitHub
+            <div className="bg-primary hover:shadow-lg transition-shadow text-center ease-in-out w-24 px-4 shadow py-2 rounded-lg font-normal text-base text-white">
+              Github
+            </div>
           </a>
         )}
       </div>

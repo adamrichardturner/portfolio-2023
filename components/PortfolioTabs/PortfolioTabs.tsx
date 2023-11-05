@@ -26,14 +26,14 @@ export default function PortfolioTabs() {
   return (
     <div>
       {/* Desktop Tabs */}
-      <div className="flex p-4 space-x-2">
+      <div className="flex p-4 pl-0 space-x-2">
         {tabs.map((tab) => (
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
             className={`px-4 py-2 text-sm font-medium rounded-md focus:outline-none ${
               activeTab === tab
-                ? 'bg-blue-500 text-white'
+                ? 'bg-secondary text-black'
                 : 'bg-gray-200 text-gray-800'
             }`}
           >
@@ -43,7 +43,7 @@ export default function PortfolioTabs() {
       </div>
 
       {/* Projects Display */}
-      <div className="grid grid-cols-1 lg:grid-cols-2">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         {filteredProjects.map((project) => (
           <ProjectComponentWithNoSSR key={project.id} project={project} />
         ))}

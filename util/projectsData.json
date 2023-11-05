@@ -31,6 +31,39 @@
       "skills": ["React", "Express.js", "Node.js", "MaterialUI"],
       "demoLink": "https://exploremovies.app",
       "githubLink": "https://github.com/adamrichardturner/explore-movies"
+    },
+    {
+      "id": "4",
+      "title": "Expenses Chart Component",
+      "description": "This Next.js, TypeScript and Tailwind app involves dynamically presenting JSON chart data using Chart.js. Bars are represented by the amount of spending, and the current day as per the user's locale is highlighted with a different colour bar.",
+      "imagePath": "/projects/chart.jpg",
+      "altTag": "Expenses Chart Component",
+      "category": "Front End",
+      "skills": ["Next.js", "Chart.js", "Tailwind", "TypeScript"],
+      "demoLink": "https://expenses-chart-nu.vercel.app/",
+      "githubLink": "https://github.com/adamrichardturner/expenses-chart"
+    },
+    {
+      "id": "5",
+      "title": "News Homepage",
+      "description": "This Next.js, TypeScript and Tailwind app includes a stunning and well laid out news homepage split into appropriate functional components.",
+      "imagePath": "/projects/newshome.jpg",
+      "altTag": "News Homepage",
+      "category": "Front End",
+      "skills": ["Next.js", "Tailwind", "TypeScript"],
+      "demoLink": "https://news-homepage-lac-six.vercel.app/",
+      "githubLink": "https://github.com/adamrichardturner/news-homepage"
+    },
+    {
+      "id": "6",
+      "title": "Results Summary Component",
+      "description": "A Results Summary Component for a psychometric test built with Vanilla JavaScript and SCSS with no external libraries or frameworks.",
+      "imagePath": "/projects/summary.jpg",
+      "altTag": "Results Summary Component",
+      "category": "Front End",
+      "skills": ["Vanilla JavaScript", "Sass"],
+      "demoLink": "https://adamrichardturner.github.io/results-summary-component/",
+      "githubLink": "https://github.com/adamrichardturner/results-summary-component"
     }
   ]
   
