@@ -1,0 +1,36 @@
+[
+    {
+      "id": "1",
+      "title": "Blogz",
+      "description": "Blogz is a dynamic MERN stack social network application. Node and Express manage routes for user actions like post creation, likes, and deletion. Test Blogz with username & password as 'demo'.",
+      "imagePath": "/projects/blogz.jpg",
+      "altTag": "Blogz",
+      "category": "Full Stack",
+      "skills": ["React", "Express.js", "Node.js", "MongoDB"],
+      "demoLink": "https://blogz.dev",
+      "githubLink": "https://github.com/adamrichardturner/blogz"
+    },
+    {
+      "id": "2",
+      "title": "ReactNews",
+      "description": "React News is a Next.js TypeScript app powered by the GNews API featuring a curation of the latest news articles on a variety of subjects sourced from over 50,000 news vendors around the world.",
+      "imagePath": "/projects/reactnews.jpg",
+      "altTag": "ReactNews",
+      "category": "Front End",
+      "skills": ["Next.js", "TypeScript", "Sass"],
+      "demoLink": "https://reactnews.app",
+      "githubLink": "https://github.com/adamrichardturner/reactnews"
+    },
+    {
+      "id": "3",
+      "title": "Explore Movies",
+      "description": "This React & Express web application was written in JavaScript and utilises MaterialUI with custom styled components, featuring movies sourced via the TMDb API with save to favourites functionality.",
+      "imagePath": "/projects/exploremovies.jpg",
+      "altTag": "Explore Movies",
+      "category": "Full Stack",
+      "skills": ["React", "Express.js", "Node.js", "MaterialUI"],
+      "demoLink": "https://exploremovies.app",
+      "githubLink": "https://github.com/adamrichardturner/explore-movies"
+    }
+  ]
+  

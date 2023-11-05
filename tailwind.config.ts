@@ -4,7 +4,7 @@ const config: Config = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   theme: {
     extend: {
@@ -18,7 +18,7 @@ const config: Config = {
         cream: '#F8F8F8',
         captiontext: '#1E1E1E',
         'form-input': '#F6F6F6',
-        'form-border': '#E7E7E7',
+        'form-border': '#E7E7E7'
       },
       fontSize: {
         xs: '0.75rem',
@@ -31,7 +31,7 @@ const config: Config = {
         '2xl': '1.563rem',
         '3xl': '1.953rem',
         '4xl': '2.441rem',
-        '5xl': '4rem',
+        '5xl': '4rem'
       },
       container: {
         center: true,
@@ -41,8 +41,8 @@ const config: Config = {
           md: '640px',
           lg: '1024px',
           xl: '1024px',
-          '2xl': '1024px',
-        },
+          '2xl': '1024px'
+        }
       },
       screens: {
         xs: '360px',
@@ -50,13 +50,13 @@ const config: Config = {
         md: '768px',
         lg: '1024px',
         xl: '1280px',
-        '2xl': '1536px',
+        '2xl': '1536px'
       },
       boxShadow: {
-        md: `0px 6px 16px 0px rgba(0, 0, 0, 0.06)`,
-      },
-    },
+        md: `0px 6px 16px 0px rgba(0, 0, 0, 0.06)`
+      }
+    }
   },
-  plugins: [],
+  plugins: []
 }
 export default config
