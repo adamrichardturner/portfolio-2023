@@ -64,6 +64,28 @@
       "skills": ["Vanilla JavaScript", "Sass"],
       "demoLink": "https://adamrichardturner.github.io/results-summary-component/",
       "githubLink": "https://github.com/adamrichardturner/results-summary-component"
+    },
+    {
+      "id": "7",
+      "title": "The Dog Store",
+      "description": "200+ product WooCommerce store and large knowledgebase owned by the UK's top dog behaviourist Stan Rawlinson. Originally migrated from a 10 year old failing Drupal store to WordPress and WooCommerce.",
+      "imagePath": "/projects/doglistener.jpg",
+      "altTag": "The Dog Store",
+      "category": "WordPress",
+      "skills": ["WordPress", "WooCommerce", "PHP", "JavaScript"],
+      "demoLink": "https://pinewoods.uk.com/",
+      "githubLink": ""
+    },
+    {
+      "id": "8",
+      "title": "Pinewoods Property",
+      "description": "Job board and business website for 40+ year old recruitment and property solutions business Pinewoods. This project was implemented via open source WordPress and configured on a secure, optimised VPS hosting environment.",
+      "imagePath": "/projects/pinewoods.jpg",
+      "altTag": "Pinewoods Property",
+      "category": "WordPress",
+      "skills": ["WordPress", "PHP", "JavaScript"],
+      "demoLink": "https://pinewoods.uk.com/",
+      "githubLink": ""
     }
   ]
   

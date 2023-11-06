@@ -46,7 +46,9 @@ const ProjectComponent: FC<ProjectComponentProps> = ({ project }) => {
       </a>
       {/* Project Title */}
       <a href={project.demoLink} target="_blank" rel="noreferrer">
-        <h3 className="text-lg font-bold leading-none py-2">{project.title}</h3>
+        <h3 className="text-lg font-bold leading-none pt-3 pb-5">
+          {project.title}
+        </h3>
       </a>
 
       {/* Project Description */}
@@ -55,11 +57,11 @@ const ProjectComponent: FC<ProjectComponentProps> = ({ project }) => {
       </p>
       <p className="text-xs">Made with:</p>
       {/* Project Skills */}
-      <div className="flex flex-wrap mb-4 space-x-2">
+      <div className="flex flex-wrap mb-4 -ml-2 -mt-2">
         {project.skills.map((skill, index) => (
           <span
             key={index}
-            className="m-0 p-2 text-sm bg-gray-200 rounded cursor-default"
+            className="ml-2 mt-2 p-2 text-sm bg-gray-200 rounded cursor-default"
           >
             {skill}
           </span>

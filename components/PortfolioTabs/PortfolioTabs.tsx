@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic'
 import { IProject } from './IProject'
 import projectsData from '../../util/projectsData.json'
 
-type TabCategory = 'All' | 'Full Stack' | 'Front End'
+type TabCategory = 'All' | 'Full Stack' | 'Front End' | 'WordPress'
 
 // Dynamically import ProjectComponent with SSR disabled
 const ProjectComponentWithNoSSR = dynamic(
@@ -17,7 +17,7 @@ const ProjectComponentWithNoSSR = dynamic(
 
 export default function PortfolioTabs() {
   const [activeTab, setActiveTab] = useState<TabCategory>('All')
-  const tabs: TabCategory[] = ['All', 'Front End', 'Full Stack']
+  const tabs: TabCategory[] = ['All', 'Front End', 'Full Stack', 'WordPress']
 
   const filteredProjects: IProject[] = projectsData.filter((project) =>
     activeTab === 'All' ? true : project.category === activeTab
@@ -31,7 +31,7 @@ export default function PortfolioTabs() {
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={`px-4 py-2 text-sm font-medium rounded-md focus:outline-none ${
+            className={`px-4 py-2 text-xxs xs:text-sm leading-none font-medium rounded-md focus:outline-none ${
               activeTab === tab
                 ? 'bg-secondary text-black'
                 : 'bg-gray-200 text-gray-800'

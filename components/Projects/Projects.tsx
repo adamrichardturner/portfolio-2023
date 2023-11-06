@@ -1,5 +1,7 @@
 import { FC } from 'react'
 import PortfolioTabs from '../PortfolioTabs/PortfolioTabs'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSquareGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Projects: FC<{}> = () => {
   return (
@@ -21,6 +23,22 @@ const Projects: FC<{}> = () => {
         </div>
         {/* PortfolioTabs component to dynamically display projects */}
         <PortfolioTabs />
+        <div className="flex flex-col align-center justify-center text-center py-16">
+          <h3 className="text-md md:text-xl font-bold leading-none pb-4">
+            View more on GitHub
+          </h3>
+          <div className="flex justify-center w-full">
+            <a
+              href="https://github.com/adamrichardturner"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="hover:shadow-lg transition-shadow ease-in-out duration-200 h-11 w-11 p-0 m-0">
+                <FontAwesomeIcon icon={faSquareGithub} className="h-full" />
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   )

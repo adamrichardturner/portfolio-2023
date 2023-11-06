@@ -21,6 +21,7 @@ const config: Config = {
         'form-border': '#E7E7E7'
       },
       fontSize: {
+        xxs: '0.6rem',
         xs: '0.75rem',
         sm: '0.8rem',
         base: '1rem',
