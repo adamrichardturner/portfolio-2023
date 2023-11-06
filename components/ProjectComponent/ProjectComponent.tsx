@@ -53,7 +53,7 @@ const ProjectComponent: FC<ProjectComponentProps> = ({ project }) => {
       <p className="text-base pb-2">
         {boldWords(project.description, wordsToBold)}
       </p>
-      <p className="text-xs">Skills used:</p>
+      <p className="text-xs">Made with:</p>
       {/* Project Skills */}
       <div className="flex flex-wrap mb-4 space-x-2">
         {project.skills.map((skill, index) => (
