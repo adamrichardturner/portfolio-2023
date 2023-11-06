@@ -5,7 +5,7 @@ const Projects: FC<{}> = () => {
   return (
     <section
       id="projects"
-      className="bg-cream min-h-screen text-body pt-16 pb-16 mx-auto flex flex-col items-center justify-center"
+      className="bg-cream min-h-screen text-body pt-16 pb-16 mx-auto"
     >
       <div className="container">
         <div className="flex flex-col items-center justify-center">

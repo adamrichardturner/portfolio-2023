@@ -17,7 +17,7 @@ const ProjectComponentWithNoSSR = dynamic(
 
 export default function PortfolioTabs() {
   const [activeTab, setActiveTab] = useState<TabCategory>('All')
-  const tabs: TabCategory[] = ['All', 'Full Stack', 'Front End']
+  const tabs: TabCategory[] = ['All', 'Front End', 'Full Stack']
 
   const filteredProjects: IProject[] = projectsData.filter((project) =>
     activeTab === 'All' ? true : project.category === activeTab
