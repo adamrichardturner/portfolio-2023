@@ -24,8 +24,8 @@ const Projects: FC<{}> = () => {
         {/* PortfolioTabs component to dynamically display projects */}
         <PortfolioTabs />
         <div className="flex flex-col align-center justify-center text-center py-16">
-          <h3 className="text-md md:text-xl font-bold leading-none pb-4">
-            View more on GitHub
+          <h3 className="text-md md:text-2xl font-bold leading-none pb-4">
+            GitHub
           </h3>
           <div className="flex justify-center w-full">
             <a

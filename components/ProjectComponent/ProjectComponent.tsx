@@ -38,8 +38,9 @@ const ProjectComponent: FC<ProjectComponentProps> = ({ project }) => {
         <div className="rounded-xl hover:shadow-xl hover:transition-shadow relative h-60">
           <Image
             src={project.imagePath}
-            layout="fill"
+            fill
             alt={project.altTag}
+            sizes={'100%'}
             className="rounded-xl object-cover"
           />
         </div>
