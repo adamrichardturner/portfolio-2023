@@ -22,7 +22,7 @@ const Projects: FC<{}> = () => {
         {/* PortfolioTabs component to dynamically display projects */}
         <PortfolioTabs />
         <div className="flex flex-col align-center justify-center text-center py-16">
-          <h3 className="text-md md:text-2xl font-bold leading-none pb-4">
+          <h3 className="text-primary text-3xl md:text-1xl font-bold leading-none pb-4">
             GitHub
           </h3>
           <div className="flex justify-center w-full">
@@ -31,7 +31,7 @@ const Projects: FC<{}> = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="hover:shadow-lg transition-shadow ease-in-out duration-200 h-11 w-11 p-0 m-0">
+              <div className="hover:shadow-lg transition-shadow ease-in-out duration-200 h-16 w-16 p-0 m-0 cursor-pointer">
                 <FontAwesomeIcon icon={faSquareGithub} className="h-full" />
               </div>
             </a>
