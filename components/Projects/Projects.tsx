@@ -16,9 +16,7 @@ const Projects: FC<{}> = () => {
           </h2>
           <div className="bg-secondary py-1 px-5 rounded-xl"></div>
           <p className="mt-4 text-center pb-6">
-            Here are a few of my favourite{' '}
-            <span className="font-bold">Full Stack</span> and{' '}
-            <span className="font-bold">Front End</span> focused projects
+            Here are a few of my favourite projects.
           </p>
         </div>
         {/* PortfolioTabs component to dynamically display projects */}

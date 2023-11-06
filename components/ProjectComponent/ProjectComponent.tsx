@@ -31,67 +31,73 @@ const ProjectComponent: FC<ProjectComponentProps> = ({ project }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="p-5 bg-white rounded-xl shadow-lg h-max"
+      className="bg-white rounded-xl shadow-lg h-max"
     >
       {/* Project Image */}
       <a href={project.demoLink} target="_blank" rel="noreferrer">
-        <div className="rounded-xl hover:shadow-xl hover:transition-shadow relative h-60">
+        <div className="rounded-t-xl hover:shadow-xl hover:transition-shadow relative h-60">
           <Image
             src={project.imagePath}
             fill
             alt={project.altTag}
             sizes={'100%'}
-            className="rounded-xl object-cover"
+            className="rounded-t-lg object-cover"
           />
         </div>
       </a>
-      {/* Project Title */}
-      <a href={project.demoLink} target="_blank" rel="noreferrer">
-        <h3 className="text-lg font-bold leading-none pt-3 pb-5">
-          {project.title}
-        </h3>
-      </a>
+      <div className="px-5 pb-5">
+        {/* Project Title */}
+        <a href={project.demoLink} target="_blank" rel="noreferrer">
+          <h3 className="text-lg font-bold leading-none pt-3 pb-5">
+            {project.title}
+          </h3>
+        </a>
 
-      {/* Project Description */}
-      <p className="text-base pb-2">
-        {boldWords(project.description, wordsToBold)}
-      </p>
-      <p className="text-xs">Made with:</p>
-      {/* Project Skills */}
-      <div className="flex flex-wrap mb-4 -ml-2 -mt-2">
-        {project.skills.map((skill, index) => (
-          <span
-            key={index}
-            className="ml-2 mt-2 p-2 text-sm bg-gray-200 rounded cursor-default"
-          >
-            {skill}
-          </span>
-        ))}
-      </div>
+        {/* Project Description */}
+        <p className="text-base pb-2">
+          {boldWords(project.description, wordsToBold)}
+        </p>
+        <p className="text-xs">Made with:</p>
+        {/* Project Skills */}
+        <div className="flex flex-wrap mb-4 -ml-2 -mt-2">
+          {project.skills.map((skill, index) => (
+            <span
+              key={index}
+              className="ml-2 mt-2 p-2 text-sm bg-gray-200 rounded cursor-default"
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
 
-      {/* Project Links */}
-      <div className="flex justify-end items-center">
-        {/* Conditional rendering for Live Demo link */}
-        {project.demoLink && (
-          <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
-            <div className="bg-secondary hover:shadow-lg transition-shadow text-center ease-in-out w-24 px-4 shadow py-2 rounded-lg font-normal text-base text-primary mr-2">
-              Demo
-            </div>
-          </a>
-        )}
+        {/* Project Links */}
+        <div className="flex justify-end items-center">
+          {/* Conditional rendering for Live Demo link */}
+          {project.demoLink && (
+            <a
+              href={project.demoLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="bg-secondary hover:shadow-lg transition-shadow text-center ease-in-out w-24 px-4 shadow py-2 rounded-lg font-normal text-base text-primary mr-2">
+                Demo
+              </div>
+            </a>
+          )}
 
-        {/* Conditional rendering for GitHub link */}
-        {project.githubLink && (
-          <a
-            href={project.githubLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="bg-primary hover:shadow-lg transition-shadow text-center ease-in-out w-24 px-4 shadow py-2 rounded-lg font-normal text-base text-white">
-              GitHub
-            </div>
-          </a>
-        )}
+          {/* Conditional rendering for GitHub link */}
+          {project.githubLink && (
+            <a
+              href={project.githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="bg-primary hover:shadow-lg transition-shadow text-center ease-in-out w-24 px-4 shadow py-2 rounded-lg font-normal text-base text-white">
+                GitHub
+              </div>
+            </a>
+          )}
+        </div>
       </div>
     </motion.div>
   )

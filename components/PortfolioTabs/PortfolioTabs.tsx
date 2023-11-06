@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import 'swiper/css'
 import dynamic from 'next/dynamic'
 import { IProject } from './IProject'
 import projectsData from '../../util/projectsData.json'
@@ -26,12 +24,12 @@ export default function PortfolioTabs() {
   return (
     <div>
       {/* Desktop Tabs */}
-      <div className="flex p-4 pl-0 space-x-2">
+      <div className="flex py-4 pl-0 space-x-2">
         {tabs.map((tab) => (
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={`px-4 py-2 text-xxs xs:text-sm leading-none font-medium rounded-md focus:outline-none ${
+            className={`px-3 py-3 text-xxs xs:text-sm leading-none font-medium rounded-md focus:outline-none ${
               activeTab === tab
                 ? 'bg-secondary text-black'
                 : 'bg-gray-200 text-gray-800'
@@ -43,7 +41,7 @@ export default function PortfolioTabs() {
       </div>
 
       {/* Projects Display */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {filteredProjects.map((project) => (
           <ProjectComponentWithNoSSR key={project.id} project={project} />
         ))}
