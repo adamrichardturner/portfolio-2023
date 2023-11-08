@@ -71,7 +71,7 @@ const ProjectComponent: FC<ProjectComponentProps> = ({ project }) => {
         </div>
 
         {/* Project Links */}
-        <div className="flex justify-end items-center">
+        <div className="flex justify-start items-center">
           {/* Conditional rendering for Live Demo link */}
           {project.demoLink && (
             <a
