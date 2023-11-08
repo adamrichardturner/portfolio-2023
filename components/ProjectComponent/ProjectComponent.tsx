@@ -23,7 +23,28 @@ const ProjectComponent: FC<ProjectComponentProps> = ({ project }) => {
   }
 
   // Words you want to make bold
-  const wordsToBold = ['demo', 'username', 'password']
+  const wordsToBold = [
+    'React',
+    'MERN',
+    'MongoDB',
+    'Node',
+    'TypeScript',
+    'JavaScript',
+    'Vanilla',
+    'MaterialUI',
+    'JSON',
+    'Chart.js',
+    'Express.js',
+    'Next.js',
+    'Sass',
+    'Tailwind',
+    'demo',
+    'username',
+    'password',
+    'WordPress',
+    'WooCommerce',
+    'Ubuntu'
+  ]
 
   return (
     <motion.div
@@ -45,31 +66,30 @@ const ProjectComponent: FC<ProjectComponentProps> = ({ project }) => {
           />
         </div>
       </a>
-      <div className="px-5 pb-5">
+      <div className="space-y-4 px-4 py-4">
         {/* Project Title */}
         <a href={project.demoLink} target="_blank" rel="noreferrer">
-          <h3 className="text-lg font-bold leading-none pt-3 pb-5">
-            {project.title}
-          </h3>
+          <h3 className="text-lg font-bold leading-none">{project.title}</h3>
         </a>
 
         {/* Project Description */}
-        <p className="text-base pb-2">
+        <p className="text-base">
           {boldWords(project.description, wordsToBold)}
         </p>
-        <p className="text-xs">Made with:</p>
         {/* Project Skills */}
-        <div className="flex flex-wrap mb-4 -ml-2 -mt-2">
-          {project.skills.map((skill, index) => (
-            <span
-              key={index}
-              className="ml-2 mt-2 p-2 text-sm bg-gray-200 rounded cursor-default"
-            >
-              {skill}
-            </span>
-          ))}
+        <div>
+          <p className="text-xs">Made with:</p>
+          <div className="flex flex-wrap mb-4 -ml-2 -mt-2">
+            {project.skills.map((skill, index) => (
+              <span
+                key={index}
+                className="ml-2 mt-2 py-1.5 px-3 text-sm bg-gray-100 rounded cursor-default"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
         </div>
-
         {/* Project Links */}
         <div className="flex justify-start items-center">
           {/* Conditional rendering for Live Demo link */}
@@ -79,7 +99,7 @@ const ProjectComponent: FC<ProjectComponentProps> = ({ project }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="bg-secondary hover:shadow-lg transition-shadow text-center ease-in-out w-24 px-4 shadow py-2 rounded-lg font-normal text-base text-primary mr-2">
+              <div className="bg-secondary hover:shadow-lg transition-shadow text-center ease-in-out w-24 px-4 shadow py-2 rounded-lg font-bold text-base text-primary mr-2">
                 Demo
               </div>
             </a>
@@ -92,7 +112,7 @@ const ProjectComponent: FC<ProjectComponentProps> = ({ project }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="bg-primary hover:shadow-lg transition-shadow text-center ease-in-out w-24 px-4 shadow py-2 rounded-lg font-normal text-base text-white">
+              <div className="bg-primary hover:shadow-lg transition-shadow text-center ease-in-out w-24 px-4 shadow py-2 rounded-lg font-bold text-base text-white">
                 GitHub
               </div>
             </a>

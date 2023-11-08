@@ -29,7 +29,7 @@ export default function PortfolioTabs() {
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={`px-3 py-3 text-xxs xs:text-sm leading-none font-medium rounded-md focus:outline-none ${
+            className={`px-3 py-3 text-xxs xs:text-sm shadow-md hover:shadow-lg leading-none font-medium rounded-md focus:outline-none ${
               activeTab === tab
                 ? 'bg-secondary text-black'
                 : 'bg-gray-200 text-gray-800'

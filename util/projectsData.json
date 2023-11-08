@@ -2,7 +2,7 @@
     {
       "id": "1",
       "title": "Blogz",
-      "description": "Blogz is a dynamic MERN stack social network application. Node and Express manage routes for user actions like post creation, likes, and deletion. Test Blogz with username & password as 'demo'.",
+      "description": "Blogz is a dynamic MERN stack social network application. Node and Express.js manage routes for user actions like post creation, likes, and deletion. Test Blogz with username & password as 'demo'.",
       "imagePath": "/projects/blogz.jpg",
       "altTag": "Blogz",
       "category": "Full Stack",
@@ -13,7 +13,7 @@
     {
       "id": "2",
       "title": "ReactNews",
-      "description": "React News is a Next.js TypeScript app powered by the GNews API featuring a curation of the latest news articles on a variety of subjects sourced from over 50,000 news vendors around the world, providing up-to-date global coverage.",
+      "description": "This is a Next.js TypeScript app styled with Sass and powered by the GNews API. It features a curation of the latest news articles on a variety of subjects sourced from over 50,000 news vendors around the world.",
       "imagePath": "/projects/reactnews.jpg",
       "altTag": "ReactNews",
       "category": "Front End",
@@ -24,7 +24,7 @@
     {
       "id": "3",
       "title": "Explore Movies",
-      "description": "This React & Express web application was written in JavaScript and utilises MaterialUI with custom styled components, featuring movies sourced via the TMDb API with save to favourites functionality.",
+      "description": "This React & Express.js web application was written in JavaScript and utilises MaterialUI (MUI) with custom styled components, featuring movies sourced via the TMDb API with save to favourites functionality.",
       "imagePath": "/projects/exploremovies.jpg",
       "altTag": "Explore Movies",
       "category": "Full Stack",
@@ -35,55 +35,55 @@
     {
       "id": "4",
       "title": "Expenses Chart",
-      "description": "This Next.js, TypeScript and Tailwind app dynamically presents JSON chart data using Chart.js. Bars represent the amount of spending, and the current day as per the user's locale is highlighted with a different coloured bar.",
+      "description": "This Next.js, TypeScript and Tailwind app dynamically presents JSON chart data utilising Chart.js. Bars represent the amount of spending per day. The current day, as per the user's locale, is highlighted with a different coloured bar.",
       "imagePath": "/projects/chart.jpg",
       "altTag": "Expenses Chart",
       "category": "Front End",
       "skills": ["Next.js", "Chart.js", "Tailwind", "TypeScript"],
-      "demoLink": "https://expenses-chart-nu.vercel.app/",
+      "demoLink": "https://expenses.adamrichardturner.dev/",
       "githubLink": "https://github.com/adamrichardturner/expenses-chart"
     },
     {
       "id": "5",
       "title": "News Homepage",
-      "description": "This Next.js, TypeScript and Tailwind app includes a stunning and well laid out news homepage split into appropriate functional components. It offers interactive UI, seamless navigation, and is optimized for performance.",
+      "description": "This Next.js, TypeScript and Tailwind app includes a stunning and well laid out news homepage split into appropriate functional components. It offers interactive UI, seamless navigation, and looks superb across all devices.",
       "imagePath": "/projects/newshome.jpg",
       "altTag": "News Homepage",
       "category": "Front End",
       "skills": ["Next.js", "Tailwind", "TypeScript"],
-      "demoLink": "https://news-homepage-lac-six.vercel.app/",
+      "demoLink": "https://news.adamrichardturner.dev/",
       "githubLink": "https://github.com/adamrichardturner/news-homepage"
     },
     {
       "id": "6",
       "title": "Results Summary",
-      "description": "A Results Summary Component for a psychometric test built with Vanilla JavaScript and Sass with no external libraries or frameworks. It offers interactive UI, seamless navigation, and is optimized for performance.",
+      "description": "A Results Summary Component for a psychometric test built with Vanilla JavaScript and Sass, with no external libraries or frameworks involved. There is artistic use of CSS gradients and flexbox achieves a beautifully responsive layout.",
       "imagePath": "/projects/summary.jpg",
       "altTag": "Results Summary",
       "category": "Front End",
       "skills": ["Vanilla JavaScript", "Sass"],
-      "demoLink": "https://adamrichardturner.github.io/results-summary-component/",
+      "demoLink": "https://summary.adamrichardturner.dev/",
       "githubLink": "https://github.com/adamrichardturner/results-summary-component"
     },
     {
       "id": "7",
       "title": "The Dog Store",
-      "description": "200+ product WooCommerce store and large knowledgebase owned by the UK's top dog behaviourist Stan Rawlinson. Originally migrated from a 10 year old failing Drupal store to WordPress and WooCommerce.",
+      "description": "200+ product WooCommerce store and large knowledgebase, owned by the UK's top dog behaviourist, Stan Rawlinson. Originally migrated from a 10-year-old failing Drupal store to WordPress and WooCommerce.",
       "imagePath": "/projects/doglistener.jpg",
       "altTag": "The Dog Store",
       "category": "WordPress",
-      "skills": ["WordPress", "WooCommerce", "PHP", "JavaScript"],
+      "skills": ["WordPress", "WooCommerce", "PHP", "JavaScript", "Ubuntu"],
       "demoLink": "https://doglistener.co.uk/",
       "githubLink": ""
     },
     {
       "id": "8",
       "title": "Pinewoods Property",
-      "description": "Job board and business website for 40+ year old recruitment and property solutions business Pinewoods. This project was implemented via open source WordPress and configured on a secure, optimised VPS hosting environment.",
+      "description": "Job board and business website for 40+ year old recruitment and property solutions business, Pinewoods. This was implemented via open source WordPress and configured on a secure, optimised, Ubuntu VPS hosting environment.",
       "imagePath": "/projects/pinewoods.jpg",
       "altTag": "Pinewoods Property",
       "category": "WordPress",
-      "skills": ["WordPress", "PHP", "JavaScript"],
+      "skills": ["WordPress", "PHP", "JavaScript", "Ubuntu"],
       "demoLink": "https://pinewoods.uk.com/",
       "githubLink": ""
     }
