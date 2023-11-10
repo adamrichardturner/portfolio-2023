@@ -71,11 +71,6 @@ const ProjectComponent: FC<ProjectComponentProps> = ({ project }) => {
         <a href={project.demoLink} target="_blank" rel="noreferrer">
           <h3 className="text-lg font-bold leading-none">{project.title}</h3>
         </a>
-
-        {/* Project Description */}
-        <p className="text-base">
-          {boldWords(project.description, wordsToBold)}
-        </p>
         {/* Project Skills */}
         <div>
           <p className="text-xs">Made with:</p>
@@ -90,6 +85,10 @@ const ProjectComponent: FC<ProjectComponentProps> = ({ project }) => {
             ))}
           </div>
         </div>
+        {/* Project Description */}
+        <p className="text-base">
+          {boldWords(project.description, wordsToBold)}
+        </p>
         {/* Project Links */}
         <div className="flex justify-start items-center">
           {/* Conditional rendering for Live Demo link */}

@@ -72,7 +72,7 @@
       "imagePath": "/projects/doglistener.jpg",
       "altTag": "The Dog Store",
       "category": "WordPress",
-      "skills": ["WordPress", "WooCommerce", "PHP", "JavaScript"],
+      "skills": ["WooCommerce", "PHP", "JavaScript"],
       "demoLink": "https://doglistener.co.uk/",
       "githubLink": ""
     },
