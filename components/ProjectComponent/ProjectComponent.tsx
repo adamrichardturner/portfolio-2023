@@ -22,7 +22,6 @@ const ProjectComponent: FC<ProjectComponentProps> = ({ project }) => {
     )
   }
 
-  // Words you want to make bold
   const wordsToBold = [
     'React',
     'MERN',
@@ -43,6 +42,9 @@ const ProjectComponent: FC<ProjectComponentProps> = ({ project }) => {
     'password',
     'WordPress',
     'WooCommerce',
+    'Framer Motion',
+    'API',
+    'Stan Rawlinson',
     'Ubuntu'
   ]
 

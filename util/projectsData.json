@@ -12,8 +12,19 @@
     },
     {
       "id": "2",
+      "title": "Countries API",
+      "description": "This Next.js app utilizes TypeScript, Tailwind, Framer Motion and the Countries API offering an interface for viewing country information, region-based filtering, and detailed country profiles. Includes dark mode toggle.",
+      "imagePath": "/projects/countries.jpg",
+      "altTag": "Countries API",
+      "category": "Front End",
+      "skills": ["Next.js", "TypeScript", "Tailwind", "Framer Motion"],
+      "demoLink": "https://countries.adamrichardturner.dev/",
+      "githubLink": "https://github.com/adamrichardturner/countries"
+    },
+    {
+      "id": "3",
       "title": "ReactNews",
-      "description": "This is a Next.js TypeScript app styled with Sass and powered by the GNews API. It features a curation of the latest news articles on a variety of subjects sourced from over 50,000 news vendors around the world.",
+      "description": "This is a Next.js, TypeScript and Sass app is powered by the GNews API. It features a curation of the latest news articles on a variety of subjects sourced from over 50,000 news vendors around the world.",
       "imagePath": "/projects/reactnews.jpg",
       "altTag": "ReactNews",
       "category": "Front End",
@@ -22,7 +33,7 @@
       "githubLink": "https://github.com/adamrichardturner/reactnews"
     },
     {
-      "id": "3",
+      "id": "4",
       "title": "Explore Movies",
       "description": "This React & Express.js web application was written in JavaScript and utilises MaterialUI (MUI) with custom styled components, featuring movies sourced via the TMDb API with save to favourites functionality.",
       "imagePath": "/projects/exploremovies.jpg",
@@ -33,7 +44,7 @@
       "githubLink": "https://github.com/adamrichardturner/explore-movies"
     },
     {
-      "id": "4",
+      "id": "5",
       "title": "Expenses Chart",
       "description": "This Next.js, TypeScript and Tailwind app dynamically presents JSON chart data utilising Chart.js. Bars represent the amount of spending per day. The current day, as per the user's locale, is highlighted with a different coloured bar.",
       "imagePath": "/projects/chart.jpg",
@@ -44,7 +55,7 @@
       "githubLink": "https://github.com/adamrichardturner/expenses-chart"
     },
     {
-      "id": "5",
+      "id": "6",
       "title": "News Homepage",
       "description": "This Next.js, TypeScript and Tailwind app includes a stunning and well laid out news homepage split into appropriate functional components. It offers interactive UI, seamless navigation, and looks superb across all devices.",
       "imagePath": "/projects/newshome.jpg",
@@ -53,17 +64,6 @@
       "skills": ["Next.js", "Tailwind", "TypeScript"],
       "demoLink": "https://news.adamrichardturner.dev/",
       "githubLink": "https://github.com/adamrichardturner/news-homepage"
-    },
-    {
-      "id": "6",
-      "title": "Results Summary",
-      "description": "A Results Summary Component for a psychometric test built with Vanilla JavaScript and Sass, with no external libraries or frameworks involved. There is artistic use of CSS gradients and flexbox achieves a beautifully responsive layout.",
-      "imagePath": "/projects/summary.jpg",
-      "altTag": "Results Summary",
-      "category": "Front End",
-      "skills": ["Vanilla JavaScript", "Sass"],
-      "demoLink": "https://summary.adamrichardturner.dev/",
-      "githubLink": "https://github.com/adamrichardturner/results-summary-component"
     },
     {
       "id": "7",
