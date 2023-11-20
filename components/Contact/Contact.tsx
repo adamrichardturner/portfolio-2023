@@ -62,7 +62,7 @@ const Contact: FunctionComponent<{}> = () => {
                 </div>
               </a>
               <a
-                href="https://twitter.com/csturner88"
+                href="https://twitter.com/aturnerlondon"
                 target="_blank"
                 rel="noreferrer"
               >

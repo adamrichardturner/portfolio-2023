@@ -17,7 +17,7 @@
       "imagePath": "/projects/countries.jpg",
       "altTag": "Countries API",
       "category": "Front End",
-      "skills": ["Next.js", "TypeScript", "Tailwind", "Framer Motion"],
+      "skills": ["Next.js", "TypeScript", "Tailwind"],
       "demoLink": "https://countries.adamrichardturner.dev/",
       "githubLink": "https://github.com/adamrichardturner/countries"
     },
@@ -39,7 +39,7 @@
       "imagePath": "/projects/exploremovies.jpg",
       "altTag": "Explore Movies",
       "category": "Full Stack",
-      "skills": ["React", "Express.js", "Node.js", "MaterialUI"],
+      "skills": ["React", "Express.js", "MaterialUI"],
       "demoLink": "https://exploremovies.app",
       "githubLink": "https://github.com/adamrichardturner/explore-movies"
     },
