@@ -75,6 +75,7 @@ const MediumCarousel = () => {
                   alt={article.title}
                   fill
                   className="rounded-t-lg object-cover object-center"
+                  priority
                 />
               </div>
 
