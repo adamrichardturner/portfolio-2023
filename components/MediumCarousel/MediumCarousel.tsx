@@ -8,7 +8,13 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 
-import { Pagination, Navigation } from 'swiper/modules'
+import { Pagination, Navigation, Autoplay } from 'swiper/modules'
+
+// import Swiper core and required modules
+import SwiperCore from 'swiper/core'
+
+// install Swiper modules
+SwiperCore.use([Autoplay, Pagination, Navigation])
 
 type MediumArticleData = {
   title: string
@@ -39,6 +45,10 @@ const MediumCarousel = () => {
       pagination={{ clickable: true }}
       navigation
       spaceBetween={22}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false
+      }}
       breakpoints={{
         // when window width is >= 640px
         640: {
@@ -72,7 +82,7 @@ const MediumCarousel = () => {
                 <h2 className="text-md font-bold leading-none">
                   {article.title}
                 </h2>
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-300 text-sm">
                   {new Date(article.pubDate).toLocaleDateString()}
                 </p>
               </div>
