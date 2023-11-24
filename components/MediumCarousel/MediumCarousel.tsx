@@ -10,10 +10,8 @@ import 'swiper/css/navigation'
 
 import { Pagination, Navigation, Autoplay } from 'swiper/modules'
 
-// import Swiper core and required modules
 import SwiperCore from 'swiper/core'
 
-// install Swiper modules
 SwiperCore.use([Autoplay, Pagination, Navigation])
 
 type MediumArticleData = {
@@ -47,14 +45,13 @@ const MediumCarousel = () => {
       spaceBetween={22}
       autoplay={{
         delay: 2500,
-        disableOnInteraction: false
+        disableOnInteraction: true,
+        pauseOnMouseEnter: true
       }}
       breakpoints={{
-        // when window width is >= 640px
         640: {
           slidesPerView: 2
         },
-        // when window width is >= 768px
         768: {
           slidesPerView: 3
         }
@@ -79,7 +76,7 @@ const MediumCarousel = () => {
                 />
               </div>
 
-              <div className="p-4">
+              <div className="py-2">
                 <h2 className="text-md font-bold leading-none">
                   {article.title}
                 </h2>
