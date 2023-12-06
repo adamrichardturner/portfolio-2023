@@ -27,12 +27,12 @@ const Media: FunctionComponent<{}> = () => {
               <YouTubePlayer videoId="7fWE_9HhiXo" />
             </div>
           </div>
-          <div>
+          {/* <div>
             <h3 className="text-xl md:text-xl font-bold leading-none mb-2">
               Articles
             </h3>
             <MediumCarousel />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

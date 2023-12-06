@@ -58,36 +58,38 @@ const MediumCarousel = () => {
       }}
       className="h-full gap-2"
     >
-      {articles.map((article, idx) => (
-        <SwiperSlide key={idx} className="flex-shrink-0">
-          <Link legacyBehavior href={article.link} passHref>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block h-full"
-            >
-              <div className="relative h-44 w-full">
-                <Image
-                  src={article.thumbnail}
-                  alt={article.title}
-                  fill
-                  className="rounded-t-lg object-cover object-center"
-                  priority
-                />
-              </div>
+      {articles?.length > 0 || articles !== undefined
+        ? articles.map((article, idx) => (
+            <SwiperSlide key={idx} className="flex-shrink-0">
+              <Link legacyBehavior href={article.link} passHref>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block h-full"
+                >
+                  <div className="relative h-44 w-full">
+                    <Image
+                      src={article.thumbnail}
+                      alt={article.title}
+                      fill
+                      className="rounded-t-lg object-cover object-center"
+                      priority
+                    />
+                  </div>
 
-              <div className="py-2">
-                <h2 className="text-md font-bold leading-none">
-                  {article.title}
-                </h2>
-                <p className="text-gray-300 text-sm">
-                  {new Date(article.pubDate).toLocaleDateString()}
-                </p>
-              </div>
-            </a>
-          </Link>
-        </SwiperSlide>
-      ))}
+                  <div className="py-2">
+                    <h2 className="text-md font-bold leading-none">
+                      {article.title}
+                    </h2>
+                    <p className="text-gray-300 text-sm">
+                      {new Date(article.pubDate).toLocaleDateString()}
+                    </p>
+                  </div>
+                </a>
+              </Link>
+            </SwiperSlide>
+          ))
+        : null}
     </Swiper>
   )
 }
