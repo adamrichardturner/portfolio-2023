@@ -85,7 +85,7 @@ const Header: FunctionComponent = ({}) => {
                 scrolled ? 'text-tertiary' : 'text-white'
               }`}
             >
-              Adam Turner
+              Adam Richard Turner
             </h3>
           </div>
         </Link>

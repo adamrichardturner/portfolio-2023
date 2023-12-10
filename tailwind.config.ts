@@ -28,7 +28,7 @@ const config: Config = {
         base: '1rem',
         lg: '2rem',
         xl: '1.25rem',
-        xxl: '3rem',
+        xxl: '2.75rem',
         xxxl: '3.5rem',
         '2xl': '1.563rem',
         '3xl': '1.953rem',

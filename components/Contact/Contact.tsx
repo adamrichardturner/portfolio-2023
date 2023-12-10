@@ -85,7 +85,7 @@ const Contact: FunctionComponent<{}> = () => {
         <hr className="h-px bg-gray-200 border-0 dark:bg-gray-700" />
       </div>
       <footer className="pt-4 text-sm">
-        © Copyright {currentYear}. Made by Adam Turner
+        © Copyright {currentYear}. Made by Adam Richard Turner
       </footer>
     </section>
   )

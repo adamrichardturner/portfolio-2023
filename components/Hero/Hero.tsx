@@ -12,7 +12,7 @@ const Hero: FunctionComponent<{}> = () => {
           <p>Hello, my name is</p>
           <div className="flex flex-row space-x-3">
             <h1 className="text-xxl md:text-5xl font-black leading-none pb-4 md:pb-8">
-              Adam Turner
+              Adam Richard Turner
             </h1>
             <span className="hidden md:block text-5xl leading-none">👋</span>
           </div>
