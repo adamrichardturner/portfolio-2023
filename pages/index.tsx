@@ -8,53 +8,53 @@ import Contact from '@/components/Contact/Contact'
 import { Roboto } from 'next/font/google'
 
 const DynamicHeader = dynamic(() => import('../components/Header/Header'), {
-  ssr: false,
+  ssr: false
 })
 
 const roboto = Roboto({
   weight: ['400', '500', '700', '900'],
-  subsets: ['latin'],
+  subsets: ['latin']
 })
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Adam Turner | Web Developer</title>
+        <title>Adam Richard Turner | Software Engineer</title>
         <meta
-          name='description'
-          content='Adam Turner | Full Stack Developer | React, Next, JavaScript, TypeScript, Express and MongoDB.'
+          name="description"
+          content="Adam Richard Turner | Software Engineer | React, Next, JavaScript, TypeScript, Express, MongoDB & PostgreSQL."
         />
 
-        <meta property='og:url' content='https://adamrichardturner.dev/' />
-        <meta property='og:type' content='website' />
+        <meta property="og:url" content="https://adamrichardturner.dev/" />
+        <meta property="og:type" content="website" />
         <meta
-          property='og:title'
-          content='Adam Turner | Full Stack Developer'
+          property="og:title"
+          content="Adam Richard Turner | Software Engineer"
         />
         <meta
-          property='og:description'
-          content='Adam Turner | Full Stack Developer | React, Next, JavaScript, TypeScript Express and MongoDB.'
+          property="og:description"
+          content="Adam Richard Turner | Software Engineer | React, Next, JavaScript, TypeScript, Express, MongoDB & PostgreSQL."
         />
         <meta
-          property='og:image'
-          content='https://adamrichardturner.dev/adamturner-social.png'
+          property="og:image"
+          content="https://adamrichardturner.dev/adamturner-social.png"
         />
 
-        <meta name='twitter:card' content='summary_large_image' />
-        <meta property='twitter:domain' content='adamrichardturner.dev' />
-        <meta property='twitter:url' content='https://adamrichardturner.dev/' />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="adamrichardturner.dev" />
+        <meta property="twitter:url" content="https://adamrichardturner.dev/" />
         <meta
-          name='twitter:title'
-          content='Adam Turner | Full Stack Developer'
+          name="twitter:title"
+          content="Adam Richard Turner | Software Engineer"
         />
         <meta
-          name='twitter:description'
-          content='Adam Turner | Full Stack Developer | React, Next, JavaScript, TypeScript Express and MongoDB.'
+          name="twitter:description"
+          content="Adam Richard Turner | Software Engineer | React, Next, JavaScript, TypeScript, Express, MongoDB & PostgreSQL."
         />
         <meta
-          name='twitter:image'
-          content='https://adamrichardturner.dev/adamturner-social.png'
+          name="twitter:image"
+          content="https://adamrichardturner.dev/adamturner-social.png"
         />
       </Head>
       <style jsx global>{`
