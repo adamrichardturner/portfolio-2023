@@ -45,7 +45,9 @@ const ProjectComponent: FC<ProjectComponentProps> = ({ project }) => {
     'Framer Motion',
     'API',
     'Stan Rawlinson',
-    'Ubuntu'
+    'Ubuntu',
+    'Shadcn',
+    'Supabase'
   ]
 
   return (

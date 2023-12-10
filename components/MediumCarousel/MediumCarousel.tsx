@@ -40,8 +40,7 @@ const MediumCarousel = () => {
     <Swiper
       modules={[Pagination, Navigation]}
       slidesPerView={1}
-      pagination={{ clickable: true }}
-      navigation
+      //navigation
       spaceBetween={22}
       autoplay={{
         delay: 2500,
@@ -67,15 +66,17 @@ const MediumCarousel = () => {
                   rel="noopener noreferrer"
                   className="block h-full"
                 >
-                  <div className="relative h-44 w-full">
-                    <Image
-                      src={article.thumbnail}
-                      alt={article.title}
-                      fill
-                      className="rounded-t-lg object-cover object-center"
-                      priority
-                    />
-                  </div>
+                  {article.thumbnail ? (
+                    <div className="relative h-44 w-full">
+                      <Image
+                        src={article.thumbnail}
+                        alt={article.title}
+                        fill
+                        className="rounded-t-lg object-cover object-center"
+                        priority
+                      />
+                    </div>
+                  ) : null}
 
                   <div className="py-2">
                     <h2 className="text-md font-bold leading-none">
