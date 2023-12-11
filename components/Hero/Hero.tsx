@@ -31,7 +31,7 @@ const Hero: FunctionComponent<{}> = () => {
           </p>
           <br />
           <h3 className="font-bold">
-            I currently employed as a Software Engineer and not open to new
+            I am currently employed as a Software Engineer and not open to new
             opportunities.
           </h3>
         </div>
