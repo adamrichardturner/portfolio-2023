@@ -47,7 +47,8 @@ const ProjectComponent: FC<ProjectComponentProps> = ({ project }) => {
     'Stan Rawlinson',
     'Ubuntu',
     'Shadcn',
-    'Supabase'
+    'Supabase',
+    'PostgreSQL'
   ]
 
   return (

@@ -2,11 +2,11 @@
     {
       "id": "1",
       "title": "GetGoing",
-      "description": "This Full Stack Next.js 14 and Supabase PostgreSQL to do list features custom category, colour coding and deadline dates for tasks. All components were written primarily in TypeScript, with Tailwind and Shadcn for styling.",
+      "description": "This Full Stack Next.js and Supabase PostgreSQL to do list features custom category, colour coding and deadline dates for tasks. All components were written primarily in TypeScript, with Tailwind and Shadcn for styling.",
       "imagePath": "/projects/getgoing.jpg",
       "altTag": "GetGoing",
       "category": "Full Stack",
-      "skills": ["React", "Next.js 14", "Supabase"],
+      "skills": ["React", "Next.js", "PostgreSQL"],
       "demoLink": "https://getgoing.adamrichardturner.dev",
       "githubLink": "https://github.com/adamrichardturner/getgoing"
     },
