@@ -2,7 +2,7 @@
     {
       "id": "1",
       "title": "GetGoing",
-      "description": "This Full Stack Next.js and Supabase PostgreSQL to do list features custom category, colour coding and deadline dates for tasks. All components were written primarily in TypeScript, with Tailwind and Shadcn for styling.",
+      "description": "This Full Stack Next.js and Supabase PostgreSQL task management web app features custom category, colour coding, deadline dates and much more. All components were written primarily in TypeScript, with Tailwind and Shadcn for styling.",
       "imagePath": "/projects/getgoing.jpg",
       "altTag": "GetGoing",
       "category": "Full Stack",
@@ -25,7 +25,7 @@
     {
       "id": "3",
       "title": "Countries API",
-      "description": "This Next.js app utilizes TypeScript, Tailwind, Framer Motion and the Countries API offering an interface for viewing country information, region-based filtering, and detailed country profiles. Includes dark mode toggle.",
+      "description": "This Next.js app utilizes TypeScript, Tailwind, Framer Motion and the Countries API offering an interface for viewing country information, region-based filtering, and detailed country profiles, all served with infinite scroll.",
       "imagePath": "/projects/countries.jpg",
       "altTag": "Countries API",
       "category": "Front End",
