@@ -8,12 +8,15 @@ import {
   faSquareXTwitter,
   faSquareYoutube,
 } from '@fortawesome/free-brands-svg-icons'
+import { Element } from 'react-scroll'
 
 const Contact: FunctionComponent<{}> = () => {
   const currentYear = new Date().getFullYear()
 
   return (
-    <section
+    <Element
+      name='contact'
+      as='section'
       id='contact'
       className='bg-cream min-h-screen text-body pt-16 pb-16 mx-auto flex flex-col items-center justify-center'
     >
@@ -87,7 +90,7 @@ const Contact: FunctionComponent<{}> = () => {
       <footer className='pt-4 text-sm'>
         © Copyright {currentYear}. Made by Adam Richard Turner
       </footer>
-    </section>
+    </Element>
   )
 }
 

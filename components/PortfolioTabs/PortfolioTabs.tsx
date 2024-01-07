@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { FC, useState } from 'react'
 import dynamic from 'next/dynamic'
 import { IProject } from './IProject'
 import projectsData from '../../util/projectsData.json'
@@ -9,11 +9,11 @@ type TabCategory = 'All' | 'Full Stack' | 'Front End' | 'WordPress'
 const ProjectComponentWithNoSSR = dynamic(
   () => import('../ProjectComponent/ProjectComponent'),
   {
-    ssr: false
+    ssr: false,
   }
 )
 
-export default function PortfolioTabs() {
+const PortfolioTabs: FC = () => {
   const [activeTab, setActiveTab] = useState<TabCategory>('All')
   const tabs: TabCategory[] = ['All', 'Front End', 'Full Stack', 'WordPress']
 
@@ -24,7 +24,7 @@ export default function PortfolioTabs() {
   return (
     <div>
       {/* Desktop Tabs */}
-      <div className="flex py-4 pl-0 space-x-2">
+      <div className='flex py-4 pl-0 space-x-2'>
         {tabs.map((tab) => (
           <button
             key={tab}
@@ -41,7 +41,7 @@ export default function PortfolioTabs() {
       </div>
 
       {/* Projects Display */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className='grid grid-cols-1 lg:grid-cols-2 gap-6'>
         {filteredProjects.map((project) => (
           <ProjectComponentWithNoSSR key={project.id} project={project} />
         ))}
@@ -49,3 +49,5 @@ export default function PortfolioTabs() {
     </div>
   )
 }
+
+export default PortfolioTabs

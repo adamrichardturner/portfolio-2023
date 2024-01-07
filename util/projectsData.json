@@ -2,7 +2,7 @@
     {
       "id": "1",
       "title": "GetGoing",
-      "description": "This Full Stack Next.js and Supabase PostgreSQL task management web app features custom category, colour coding, deadline dates and much more. All components were written primarily in TypeScript, with Tailwind and Shadcn for styling.",
+      "description": "This Next.js and Supabase PostgreSQL task management web app features custom category, colour coding, deadline dates and much more. All components were written primarily in TypeScript, with Tailwind and Shadcn for styling.",
       "imagePath": "/projects/getgoing.jpg",
       "altTag": "GetGoing",
       "category": "Full Stack",
@@ -25,7 +25,7 @@
     {
       "id": "3",
       "title": "Countries API",
-      "description": "This Next.js app utilizes TypeScript, Tailwind, Framer Motion and the Countries API offering an interface for viewing country information, region-based filtering, and detailed country profiles, all served with infinite scroll.",
+      "description": "Next.js app utilizes TypeScript, Tailwind, Framer Motion and the Countries API offering an interface for viewing country information, region-based filtering, and detailed country profiles, all served with infinite scroll.",
       "imagePath": "/projects/countries.jpg",
       "altTag": "Countries API",
       "category": "Front End",
@@ -36,7 +36,7 @@
     {
       "id": "4",
       "title": "ReactNews",
-      "description": "This is a Next.js, TypeScript and Sass app is powered by the GNews API. It features a curation of the latest news articles on a variety of subjects sourced from over 50,000 news vendors around the world.",
+      "description": "ReactNews is a Next.js, TypeScript and Sass app is powered by the GNews API. It features a curation of the latest news articles on a variety of subjects sourced from over 50,000 news vendors around the world.",
       "imagePath": "/projects/reactnews.jpg",
       "altTag": "ReactNews",
       "category": "Front End",
@@ -47,7 +47,7 @@
     {
       "id": "5",
       "title": "Expenses Chart",
-      "description": "This Next.js, TypeScript and Tailwind app dynamically presents JSON chart data utilising Chart.js. Bars represent the amount of spending per day. The current day, as per the user's locale, is highlighted with a different coloured bar.",
+      "description": "Chart.js Next.js, TypeScript and Tailwind app dynamically presents JSON chart data. Bars represent the amount of spending per day. The current day, as per the user's locale, is highlighted with a different coloured bar.",
       "imagePath": "/projects/chart.jpg",
       "altTag": "Expenses Chart",
       "category": "Front End",

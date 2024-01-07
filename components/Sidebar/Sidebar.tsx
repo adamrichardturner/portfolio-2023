@@ -1,12 +1,7 @@
 import { FunctionComponent } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareEnvelope } from '@fortawesome/free-solid-svg-icons'
-import {
-  faLinkedin,
-  faSquareGithub,
-  faSquareXTwitter,
-  faSquareYoutube,
-} from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin, faSquareGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar: FunctionComponent = ({}) => {
   return (

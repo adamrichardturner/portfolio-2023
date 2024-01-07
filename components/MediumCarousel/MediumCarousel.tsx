@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { FC, useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -21,7 +21,7 @@ type MediumArticleData = {
   pubDate: string
 }
 
-const MediumCarousel = () => {
+const MediumCarousel: FC = () => {
   const [articles, setArticles] = useState<MediumArticleData[]>([])
 
   useEffect(() => {
@@ -45,44 +45,44 @@ const MediumCarousel = () => {
       autoplay={{
         delay: 2500,
         disableOnInteraction: true,
-        pauseOnMouseEnter: true
+        pauseOnMouseEnter: true,
       }}
       breakpoints={{
         640: {
-          slidesPerView: 2
+          slidesPerView: 2,
         },
         768: {
-          slidesPerView: 3
-        }
+          slidesPerView: 3,
+        },
       }}
-      className="h-full gap-2"
+      className='h-full gap-2'
     >
       {articles?.length > 0 || articles !== undefined
         ? articles.map((article, idx) => (
-            <SwiperSlide key={idx} className="flex-shrink-0">
+            <SwiperSlide key={idx} className='flex-shrink-0'>
               <Link legacyBehavior href={article.link} passHref>
                 <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block h-full"
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='block h-full'
                 >
                   {article.thumbnail ? (
-                    <div className="relative h-44 w-full">
+                    <div className='relative h-44 w-full'>
                       <Image
                         src={article.thumbnail}
                         alt={article.title}
                         fill
-                        className="rounded-t-lg object-cover object-center"
+                        className='rounded-t-lg object-cover object-center'
                         priority
                       />
                     </div>
                   ) : null}
 
-                  <div className="py-2">
-                    <h2 className="text-md font-bold leading-none">
+                  <div className='py-2'>
+                    <h2 className='text-md font-bold leading-none'>
                       {article.title}
                     </h2>
-                    <p className="text-gray-300 text-sm">
+                    <p className='text-gray-300 text-sm'>
                       {new Date(article.pubDate).toLocaleDateString()}
                     </p>
                   </div>
