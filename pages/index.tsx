@@ -6,7 +6,6 @@ import Projects from '@/components/Projects/Projects'
 import Media from '@/components/Media/Media'
 import Contact from '@/components/Contact/Contact'
 import { Roboto } from 'next/font/google'
-import { HeroHeightProvider } from '@/util/context/HeroHeightContext'
 
 const DynamicHeader = dynamic(() => import('../components/Header/Header'), {
   ssr: false,
@@ -63,16 +62,14 @@ export default function Home() {
           font-family: ${roboto.style.fontFamily};
         }
       `}</style>
-      <HeroHeightProvider>
-        <DynamicHeader />
-        <Sidebar />
-        <main>
-          <Hero />
-          <Projects />
-          <Media />
-          <Contact />
-        </main>
-      </HeroHeightProvider>
+      <DynamicHeader />
+      <Sidebar />
+      <main>
+        <Hero />
+        <Projects />
+        <Media />
+        <Contact />
+      </main>
     </>
   )
 }
