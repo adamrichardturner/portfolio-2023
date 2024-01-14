@@ -27,7 +27,7 @@ const Media: FC = () => {
         <div className='space-y-6'>
           <div className='playerWrapper'>
             <div className='player'>
-              <YouTubePlayer videoId='7fWE_9HhiXo' />
+              <YouTubePlayer videoId='Sfbcx5FG2Lc' />
             </div>
           </div>
           <div>

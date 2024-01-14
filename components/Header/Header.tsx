@@ -256,7 +256,7 @@ const Header: FunctionComponent = ({}) => {
               exit='hidden'
             >
               <Link
-                className='fixed right-2 shadow-md hover:shadow-xl bottom-2 text-[2rem] md:text-[2.5rem] text-secondary bg-primary rounded-lg'
+                className='fixed right-3 bottom-3 shadow-md hover:shadow-xl text-[2.25rem] md:text-[2.5rem] text-secondary bg-primary rounded-lg'
                 to={'hero'}
                 smooth={true}
                 offset={-5}

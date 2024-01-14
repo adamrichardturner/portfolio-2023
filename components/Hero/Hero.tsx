@@ -22,9 +22,8 @@ const Hero: FC<{}> = () => {
           <p className='text-base'>
             I am a{' '}
             <span className='font-bold text-secondary'>Software Engineer</span>{' '}
-            based in London, skilled at crafting websites and applications using
-            React, Next, JavaScript, TypeScript, Express, MongoDB and PostgreSQL
-            amongst many other tools and technologies.
+            based in London, skilled at crafting web applications using
+            TypeScript and Javascript, as well as a variety of other tools.
             <br />
             <br />
             My greatest strengths are in Front End. I have excellent commercial

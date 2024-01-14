@@ -24,6 +24,17 @@
     },
     {
       "id": "3",
+      "title": "Notifications",
+      "description": "This is a Next.js social media notifications component based on an elegant Frontend Mentor design. The notification data is stored in JSON and handled dynamically in React client side components.",
+      "imagePath": "/projects/notifications.jpg",
+      "altTag": "Notifications",
+      "category": "Front End",
+      "skills": ["Next.js", "TypeScript", "Framer Motion"],
+      "demoLink": "https://notifications.adamrichardturner.dev",
+      "githubLink": "https://github.com/adamrichardturner/notifications-page"
+    },
+    {
+      "id": "4",
       "title": "Countries API",
       "description": "Next.js app utilizes TypeScript, Tailwind, Framer Motion and the Countries API offering an interface for viewing country information, region-based filtering, and detailed country profiles, all served with infinite scroll.",
       "imagePath": "/projects/countries.jpg",
@@ -33,17 +44,7 @@
       "demoLink": "https://countries.adamrichardturner.dev/",
       "githubLink": "https://github.com/adamrichardturner/countries"
     },
-    {
-      "id": "4",
-      "title": "ReactNews",
-      "description": "ReactNews is a Next.js, TypeScript and Sass app is powered by the GNews API. It features a curation of the latest news articles on a variety of subjects sourced from over 50,000 news vendors around the world.",
-      "imagePath": "/projects/reactnews.jpg",
-      "altTag": "ReactNews",
-      "category": "Front End",
-      "skills": ["Next.js", "TypeScript", "Sass"],
-      "demoLink": "https://reactnews.app",
-      "githubLink": "https://github.com/adamrichardturner/reactnews"
-    },
+    
     {
       "id": "5",
       "title": "Expenses Chart",
