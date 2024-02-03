@@ -29,7 +29,7 @@ const Hero: FC<{}> = () => {
             Aside from my professional work, I am currently honing my skills in
             Front End Development by completing{" "}
             <a
-              href='https://www.frontendmentor.io/'
+              href='https://github.com/adamrichardturner/frontend-mentor'
               className='text-secondary font-semibold'
               target='_blank'
             >
