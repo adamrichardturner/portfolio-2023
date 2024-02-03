@@ -1,14 +1,14 @@
-import { FunctionComponent } from 'react'
-import ContactForm from './ContactForm'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSquareEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { FunctionComponent } from "react"
+import ContactForm from "./ContactForm"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faSquareEnvelope } from "@fortawesome/free-solid-svg-icons"
 import {
   faLinkedin,
   faSquareGithub,
   faSquareXTwitter,
   faSquareYoutube,
-} from '@fortawesome/free-brands-svg-icons'
-import { Element } from 'react-scroll'
+} from "@fortawesome/free-brands-svg-icons"
+import { Element } from "react-scroll"
 
 const Contact: FunctionComponent<{}> = () => {
   const currentYear = new Date().getFullYear()
@@ -85,7 +85,9 @@ const Contact: FunctionComponent<{}> = () => {
             </div>
           </div>
         </div>
-        <hr className='h-px bg-gray-200 border-0 dark:bg-gray-700' />
+        <div className='flex flex-col items-center justify-center'>
+          <hr className='h-px bg-gray-200 border-0 dark:bg-gray-700 w-[200px] md:w-[600px]' />
+        </div>
       </div>
       <footer className='pt-4 text-sm'>
         © Copyright {currentYear}. Made by Adam Richard Turner

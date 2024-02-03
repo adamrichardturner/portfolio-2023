@@ -81,7 +81,7 @@
     {
       "id": "8",
       "title": "Pinewoods Property",
-      "description": "Job board and business website for 40+ year old recruitment and property solutions business, Pinewoods. This was implemented via open source WordPress and configured on a secure, optimised, Ubuntu VPS hosting environment.",
+      "description": "Job board and business website for 40+ year old recruitment and property solutions business, Pinewoods. This was implemented via open source WordPress and hosted on an Ubuntu VPS environment.",
       "imagePath": "/projects/pinewoods.jpg",
       "altTag": "Pinewoods Property",
       "category": "WordPress",

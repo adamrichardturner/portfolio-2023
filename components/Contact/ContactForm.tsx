@@ -1,15 +1,15 @@
-import { useForm, ValidationError } from '@formspree/react'
+import { useForm, ValidationError } from "@formspree/react"
 
 const ContactForm: React.FC = () => {
-  const [state, handleSubmit] = useForm('xqkvagwk')
+  const [state, handleSubmit] = useForm("xqkvagwk")
 
   if (state.succeeded) {
     return (
       <p
         style={{
-          fontWeight: '500',
-          fontSize: '1.5rem',
-          textAlign: 'center',
+          fontWeight: "500",
+          fontSize: "1.5rem",
+          textAlign: "center",
         }}
       >
         Thanks for reaching out!
@@ -55,7 +55,7 @@ const ContactForm: React.FC = () => {
       />
       <ValidationError prefix='Message' field='message' errors={state.errors} />
       <button
-        className='bg-secondary hover:shadow-lg transition-shadow ease-in-out w-full sm:w-24 px-8 shadow mt-12 py-3 rounded-lg font-bold text-base text-primary'
+        className='bg-secondary hover:shadow-lg transition-shadow ease-in-out w-full sm:w-28 flex-grow-0 px-8 shadow mt-12 py-3 rounded-lg font-bold text-base text-white'
         type='submit'
         id='submit'
         disabled={state.submitting}

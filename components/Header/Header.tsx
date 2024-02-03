@@ -1,16 +1,16 @@
-import { useState, useEffect, useRef, FunctionComponent } from 'react'
-import Image from 'next/image'
-import burgerBlack from '../../public/burger-menu-black.svg'
-import burgerWhite from '../../public/burger-menu-white.svg'
-import { BsArrowUpSquareFill } from 'react-icons/bs'
-import { Link } from 'react-scroll'
-import { motion, AnimatePresence } from 'framer-motion'
+import { useState, useEffect, useRef, FunctionComponent } from "react"
+import Image from "next/image"
+import burgerBlack from "../../public/burger-menu-black.svg"
+import burgerWhite from "../../public/burger-menu-white.svg"
+import { BsArrowUpSquareFill } from "react-icons/bs"
+import { Link } from "react-scroll"
+import { motion, AnimatePresence } from "framer-motion"
 
 const Header: FunctionComponent = ({}) => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
   const [scrolled, setScrolled] = useState<boolean>(false)
   const [isMobile, setIsMobile] = useState<boolean>(
-    typeof window !== 'undefined' && window.innerWidth < 640
+    typeof window !== "undefined" && window.innerWidth < 640
   )
   const [showArrow, setShowArrow] = useState(false)
 
@@ -22,18 +22,6 @@ const Header: FunctionComponent = ({}) => {
     visible: {
       opacity: 1,
       transition: { duration: 0.25 },
-    },
-  }
-
-  const headerVariants = {
-    initial: {
-      y: '-100%',
-      opacity: 0,
-    },
-    scrolled: {
-      y: 0,
-      opacity: 1,
-      transition: { type: 'spring', stiffness: 100, duration: 0.5 },
     },
   }
 
@@ -61,20 +49,20 @@ const Header: FunctionComponent = ({}) => {
     }
 
     if (isMenuOpen) {
-      document.body.style.overflowY = 'hidden'
+      document.body.style.overflowY = "hidden"
     } else {
-      document.body.style.overflowY = 'auto'
+      document.body.style.overflowY = "auto"
     }
 
     handleResize()
 
-    window.addEventListener('resize', handleResize)
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener("resize", handleResize)
+    window.addEventListener("scroll", handleScroll)
 
     return () => {
-      window.removeEventListener('resize', handleResize)
-      window.removeEventListener('scroll', handleScroll)
-      document.body.style.overflowY = 'auto'
+      window.removeEventListener("resize", handleResize)
+      window.removeEventListener("scroll", handleScroll)
+      document.body.style.overflowY = "auto"
     }
   }, [isMenuOpen, isMobile, scrolled])
 
@@ -84,11 +72,11 @@ const Header: FunctionComponent = ({}) => {
         className={`z-10 fixed top-0 w-full h-16 transition-all ease-in-out duration-200 ${
           isMobile
             ? scrolled
-              ? 'bg-white text-primary shadow-md'
-              : 'bg-transparent text-white'
+              ? "bg-white text-primary shadow-md"
+              : "bg-transparent text-white"
             : scrolled
-            ? 'bg-white shadow-md text-primary'
-            : 'bg-transparent text-white'
+            ? "bg-white shadow-md text-primary"
+            : "bg-transparent text-white"
         }`}
       >
         <div className='container h-full flex items-center justify-between'>
@@ -111,7 +99,7 @@ const Header: FunctionComponent = ({}) => {
               />
               <h3
                 className={`font-medium ${
-                  scrolled ? 'text-tertiary' : 'text-white'
+                  scrolled ? "text-tertiary" : "text-white"
                 }`}
               >
                 Adam Richard Turner
@@ -121,7 +109,7 @@ const Header: FunctionComponent = ({}) => {
           <nav className='desktop-nav'>
             <ul
               className={`nav-items flex flex-row items-center font-normal justify-end list-none space-x-8 text-base ${
-                scrolled ? 'text-primary' : 'text-white'
+                scrolled ? "text-primary" : "text-white"
               }`}
             >
               <li className='nav-item'>
@@ -185,7 +173,7 @@ const Header: FunctionComponent = ({}) => {
             />
           </div>
         </div>
-        <nav id='overlay' className={`${isMenuOpen ? 'open' : 'closed'}`}>
+        <nav id='overlay' className={`${isMenuOpen ? "open" : "closed"}`}>
           <Image
             src='/close-button.svg'
             alt='Close'
@@ -256,8 +244,8 @@ const Header: FunctionComponent = ({}) => {
               exit='hidden'
             >
               <Link
-                className='fixed right-3 bottom-3 shadow-md hover:shadow-xl text-[2.25rem] md:text-[2.5rem] text-secondary bg-primary rounded-lg'
-                to={'hero'}
+                className='fixed right-3 bottom-3 shadow-md hover:shadow-xl text-[2.25rem] md:text-[2.5rem] text-white bg-primary rounded-lg'
+                to={"hero"}
                 smooth={true}
                 offset={-5}
                 duration={100}

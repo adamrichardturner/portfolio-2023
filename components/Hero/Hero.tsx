@@ -1,6 +1,6 @@
-import { FC } from 'react'
-import Image from 'next/image'
-import { Element } from 'react-scroll'
+import { FC } from "react"
+import Image from "next/image"
+import { Element } from "react-scroll"
 
 const Hero: FC<{}> = () => {
   return (
@@ -10,7 +10,7 @@ const Hero: FC<{}> = () => {
       id='hero'
       className='hero min-h-screen bg-primary pb-12 pt-20 md:h-full flex flex-col items-center justify-center'
     >
-      <div className='container space-y-8 md:space-y-24'>
+      <div className='container space-y-8 md:space-y-16'>
         <div className='text-white'>
           <p>Hello, my name is</p>
           <div className='flex flex-row space-x-3'>
@@ -20,16 +20,22 @@ const Hero: FC<{}> = () => {
             <span className='hidden md:block text-5xl leading-none'>👋</span>
           </div>
           <p className='text-base'>
-            I am a{' '}
-            <span className='font-bold text-secondary'>Software Engineer</span>{' '}
+            I am a{" "}
+            <span className='font-bold text-secondary'>Software Engineer</span>{" "}
             based in London, skilled at crafting web applications using
             TypeScript and Javascript, as well as a variety of other tools.
             <br />
             <br />
-            My greatest strengths are in Front End. I have excellent commercial
-            experience in this area, with a keen interest to expand my skillset
-            in a diverse range of technologies.
-            <br />
+            Aside from my professional work, I am currently honing my skills in
+            Front End Development by completing{" "}
+            <a
+              href='https://www.frontendmentor.io/'
+              className='text-secondary font-semibold'
+              target='_blank'
+            >
+              Front End Mentor
+            </a>{" "}
+            challenges, open source projects and further study.
           </p>
         </div>
         <div className='hero-skills grid grid-cols-2 lg:grid-cols-4 gap-6 text-xs md:text-sm font-bold text-caption'>

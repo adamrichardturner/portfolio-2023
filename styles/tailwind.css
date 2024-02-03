@@ -1,11 +1,11 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 /* Background Images  */
 
 .hero {
-  background-image: url('/hero-shape-right.svg');
+  background-image: url("/hero-shape-right.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top right;
@@ -13,7 +13,7 @@
 }
 
 .media {
-  background-image: url('/hero-shape-left.svg');
+  background-image: url("/hero-shape-left.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom left;
@@ -81,8 +81,8 @@ a.active {
 }
 
 .desktop-nav .nav-item > .active a.active {
-  content: '';
-  background-color: #ffc436;
+  content: "";
+  background-color: #42684f;
   color: #fff !important;
   position: absolute;
   left: 0;
@@ -93,8 +93,8 @@ a.active {
 }
 
 .desktop-nav .nav-item a::before {
-  content: '';
-  background-color: #ffc436;
+  content: "";
+  background-color: #42684f;
   position: absolute;
   left: 0;
   bottom: 0;
